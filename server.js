@@ -16,7 +16,8 @@ if (process.env.NODE_ENV === "production") {
 app.use(routes);
 
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/yourtimedb" { keepAlive: true, keepAliveInitialDelay: 300000 });
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/yourtimedb" { 
+  keepAlive: true, keepAliveInitialDelay: 300000 });
 
 // This makes sure that any errors are logged if mongodb hangs
 db.on("error", function(error) {
