@@ -14,9 +14,9 @@ export default {
   // Deletes the saved video with the given id
   deleteVideo: function(id) {
     return http.delete("/api//videos/" + id);
-  },
-  // Saves a video to the database
-  saveVideo: function(bookData) {
-    return http.post("/api//videos", videoData);
   }
+  // Saves a video to the database
+  // saveVideo: function(bookData) {
+  //   return http.post("/api//videos", videoData);
+  // }
 };
