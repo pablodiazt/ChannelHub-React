@@ -58,6 +58,7 @@ class Search extends Component {
     }).then(() => this.getVideos());
   };
 */
+  }
   render() {
     return (
       <div className="container">

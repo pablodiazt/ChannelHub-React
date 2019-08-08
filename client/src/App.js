@@ -6,7 +6,7 @@ import Saved from "./pages/save";
 import NotFound from "./pages/notFound";
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
-import "./App.css";
+import "./assets/App.css";     
 import "react-toastify/dist/ReactToastify.css";
 
 class App extends Component {

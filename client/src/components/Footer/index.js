@@ -1,12 +1,14 @@
 import React from "react";
 
-function Footer() {
+import "./style.css";
+
+const Footer = () => {
   return (
-    <header class="title">
-        <h1 class="title">Footer </h1>
-    </header>
+    <footer className="footer navbar-fixed-bottom has-background-tan text-center heading-subtitle">
+      Made with React
+    </footer>
   );
-}
+};
 
 
 export default Footer;
