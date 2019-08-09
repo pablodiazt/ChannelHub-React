@@ -11,11 +11,12 @@
     "express": "^4.17.1",
     "gh": "^1.17.5",
     "gh-pages": "^2.1.1",
-    "mongoose": "^5.6.8",
+    "if-env": "^1.0.4",
+    "mongod": "^2.0.0",
+    "mongodb": "^3.3.0-beta2",
+    "mongoose": "^5.6.9",
     "nodemon": "^1.19.1",
-
-    "react-dom": "^16.8.6",
-    "if-env": "^1.0.4"
+    "react-dom": "^16.8.6"
   },
   "devDependencies": {
     "concurrently": "^4.1.0",
