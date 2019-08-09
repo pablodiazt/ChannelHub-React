@@ -1,13 +1,15 @@
-import React, { Component } from "react";
-import { ToastContainer } from "react-toastify";
-import { Route, Redirect, Switch } from "react-router-dom";
-import Search from "./pages/search";
-import Saved from "./pages/save";
-import NotFound from "./pages/notFound";
-import NavBar from "./components/NavBar";
-import Footer from "./components/Footer";
-import "./assets/App.css";     
-import "react-toastify/dist/ReactToastify.css";
+// import React, { Component } from "react";
+// import { ToastContainer } from "react-toastify";
+// import { Route, Redirect, Switch } from "react-router-dom";
+// import Search from "./pages/search";
+// import Saved from "./pages/save";
+// import NotFound from "./pages/notFound";
+// import NavBar from "./components/NavBar";
+// import Footer from "./components/Footer";
+// import "./assets/App.css";     
+// import "react-toastify/dist/ReactToastify.css";
+
+console.log("inside app js")
 
 class App extends Component {
   render() {

@@ -1,7 +1,12 @@
 const router = require("express").Router();
-const videoRoutes = require("./videos");
+const homeRoutes = require("./homePage");
+// const videoRoutes = require("./videos");
 
-// Book routes
-router.use("/videos", videoRoutes);
+console.log("------>>>>on routes api index")
+// 
+router.use("/home", homeRoutes);
+
+// Video routes
+// router.use("/videos", videoRoutes);
 
 module.exports = router;
