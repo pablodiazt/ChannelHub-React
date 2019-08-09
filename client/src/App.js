@@ -14,7 +14,8 @@ class App extends Component {
             </div>
             <h2>ssss</h2>
             <p>sdklfhslfh</p>
-            <Home />
+            {/* <Home /> */}
+            
         </div>
         
 
