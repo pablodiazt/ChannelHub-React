@@ -1,4 +1,4 @@
-import React from "react";
+import React from "./node_modules/react";
 // ...rest operator includes any properties other than 'name', 'label', and 'error'
 const Input = ({ name, label, error, ...rest }) => {
   return (
