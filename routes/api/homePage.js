@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const homePage = require("../../client/src/");
+const homePage = require("../../client/src");
 
 console.log("------>>>>on routes api homePage")
 
