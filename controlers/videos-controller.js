@@ -1,5 +1,6 @@
 const db = require("../models");
 
+console.log("------>>>>on controllers videosController")
 // Defining methods for the Video
 module.exports = {
   findAll: function(req, res) {

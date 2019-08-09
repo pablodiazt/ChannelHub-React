@@ -1,4 +1,4 @@
-import * as Sentry from "@sentry/browser";
+import * as Sentry from "../../../node-modules/@sentry/browser";
 
 function init() {
   Sentry.init({

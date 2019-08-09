@@ -1,3 +1,4 @@
 module.exports = {
-    Video: require("./video")
+    Video: require("./Videos"),
+    User: require("./Users")
   };

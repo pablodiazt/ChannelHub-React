@@ -1,10 +1,10 @@
 const router = require("express").Router();
-// const videosController = require("../../controllers/videosController");
+
 const videosController = require("../../controlers/videosController");
 
-
+console.log("------>>>>on routes api videos")
 // Matches with "/api/videos"
-router.route("/")
+router.route("/videos")
   .get(videosController.findAll)
   .post(videosController.create);
 
