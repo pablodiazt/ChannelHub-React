@@ -8,8 +8,11 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "gh": "^1.17.5",
+    "gh-pages": "^2.1.1",
     "mongoose": "^5.6.8",
-    "nodemon": "^1.19.1"
+    "nodemon": "^1.19.1",
+    "pages": "^0.0.16"
   },
   "devDependencies": {},
   "scripts": {
