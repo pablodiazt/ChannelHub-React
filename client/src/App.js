@@ -9,8 +9,15 @@ class App extends Component {
   render() {
     return (
         <div>
-            <h2>Welcome to Your Time</h2>
+            <div>
+                <h2>Welcome to Your Time</h2>
+            </div>
+            <h2>ssss</h2>
+            <p>sdklfhslfh</p>
+            <Home />
         </div>
+        
+
     );
   }
 }
