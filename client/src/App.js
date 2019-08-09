@@ -1,13 +1,19 @@
-// import React, { Component } from "react";
-// import { ToastContainer } from "react-toastify";
-// import { Route, Redirect, Switch } from "react-router-dom";
-// import Search from "./pages/search";
-// import Saved from "./pages/save";
-// import NotFound from "./pages/notFound";
-// import NavBar from "./components/NavBar";
-// import Footer from "./components/Footer";
-// import "./assets/App.css";     
-// import "react-toastify/dist/ReactToastify.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import Books from "./pages/Books";
+import Detail from "./pages/Detail";
+import NoMatch from "./pages/NoMatch";
+import Nav from "./components/layout/Navbar";
+
+import React, { Component } from "react";
+import { ToastContainer } from "react-toastify";
+import { Route, Redirect, Switch } from "react-router-dom";
+import Search from "./pages/Search";
+import Saved from "./pages/Save";
+import NotFound from "./pages/NotFound";
+import NavBar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer/Footer";    
+import "../../node-modules/react-toastify/dist/ReactToastify.css";
 
 console.log("inside app js")
 

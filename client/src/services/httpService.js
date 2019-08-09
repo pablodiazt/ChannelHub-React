@@ -1,4 +1,4 @@
-import axios from "axios";
+import axios from "../../../node-modules/axios";
 import { toast } from "react-toastify";
 import logger from "./logService";
 
