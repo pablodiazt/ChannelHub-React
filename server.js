@@ -26,13 +26,3 @@ app.use(routes);
 app.listen(PORT, function () {
   console.log(`🌎  ==> API Server now listening on PORT ${ PORT }!`);
 });
-
-function(sdf) {
-  var = 2;
-}
-var function(sdf) {
-
-}
-var function() {
-
-}
