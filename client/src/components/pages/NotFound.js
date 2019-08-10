@@ -1,7 +1,14 @@
 import React from "react";
 
-const NotFound = () => {
-  return <h1 className="heading-title text-center">404 </h1>;
-};
 
-export default NotFound;
+function Something() {
+    return (
+        <React.Fragment>
+            <div class="">
+                <h2></h2>
+            </div>
+        </React.Fragment>
+    );
+}
+
+export default Something;

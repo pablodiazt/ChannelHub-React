@@ -1,15 +1,15 @@
 import React from "react";
 // import Nav from "../component/Nav";
 
-const Home = () => {
-  return (
-      <div>
-            <h1>esdjfj</h1>
-            <h1 className="heading-title text-center">Home Page</h1>;
-            {/* <Nav /> */}
-      </div>
-  );
 
-};
+const Home = () => {
+    return (
+        <React.Fragment>
+            <div class="">
+                <h2>Home Page</h2>
+            </div>
+        </React.Fragment>
+    );
+}
 
 export default Home;
