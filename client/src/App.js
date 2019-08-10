@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 // ---- COMPONENTS - COMPONENT:
 import Home from "./components/pages/Home";
 import SearchBar from "./components/component/SearchBar";
-import Videos from "./components/component/Videos";
+import Videos from "./components/component/Videos/";
 // ---- COMPONENTS - LAYOUT:
 import Header from "./components/layout/Header"
 import Navbar from "./components/layout/Navbar";
@@ -30,6 +30,26 @@ class App extends Component {
 
 
 
+
+
+
+                {/* ---------------------------------- COLLAPSE */}
+                <div class="pos-f-t">
+                    <div class="collapse" id="navbarToggleExternalContent">
+                        <div class="bg-dark p-4">
+                            <h4 class="text-white">Collapsed content</h4>
+                            <span class="text-muted">Toggleable via the navbar brand.</span>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-dark bg-dark">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav>
+                </div>
+
+
+                {/* ----------- */}
                 <div>
                     {/* <!-- Footer --> */}
                     <footer class="page-footer font-small mdb-color pt-4">
@@ -174,9 +194,6 @@ class App extends Component {
 
 
 
-                {/* ----------------------------- NAVBAR */}
-
-
 
 
                 {/* ----------------------------- NAVBAR */}
@@ -206,71 +223,17 @@ class App extends Component {
                 <button class="btn btn-outline-success" type="button">Main button</button>
                 <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
 
-                <nav class="navbar navbar-light bg-light">
-                    <span class="navbar-text">
-                        HTML Videos:
-                    </span>
-                </nav>
 
 
 
 
-                {/* --------------------------------- VIDEOS */}
-                <div class="embed-responsive embed-responsive-1by1 w-25 p-3">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-
-                <div class="embed-responsive embed-responsive-1by1 w-25 p-3">
-                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
-                </div>
-
-
-                <footer class="page-footer font-small mdb-color darken-3 pt-4">
-
-                    {/* <!-- Footer Elements --> */}
-                    <div class="container">
-
-                        {/* <!--Grid row--> */}
-                        <div class="row d-flex justify-content-center">
-
-                            {/* <!--Grid column--> */}
-                            <div class="col-md-6">
-
-                                {/* <!-- Video --> */}
-                                <div class="embed-responsive embed-responsive-16by9 mb-4">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/vlDzYIIOYmM"
-                                        allowfullscreen></iframe>
-                                </div>
-
-                            </div>
-                            {/* <!--Grid column--> */}
-
-                        </div>
-                        {/* <!--Grid row--> */}
-
-                    </div>
-
-                </footer>
-
-                {/* --------------------- */}
 
 
 
 
-                {/* ---------------------------------- COLLAPSE */}
-                <div class="pos-f-t">
-                    <div class="collapse" id="navbarToggleExternalContent">
-                        <div class="bg-dark p-4">
-                            <h4 class="text-white">Collapsed content</h4>
-                            <span class="text-muted">Toggleable via the navbar brand.</span>
-                        </div>
-                    </div>
-                    <nav class="navbar navbar-dark bg-dark">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                    </nav>
-                </div>
+
+
+
 
 
 
