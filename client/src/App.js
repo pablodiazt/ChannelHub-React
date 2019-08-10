@@ -19,7 +19,6 @@ class App extends Component {
             <React.Fragment>
 
 
-
                 <Router>
                     <Route exact path="/" component={Header} />
                     <Route exact path="/" component={Navbar} />
@@ -27,6 +26,12 @@ class App extends Component {
                     <Route exact path="/" component={Videos} />
                     <Route exact path="/" component={Footer} />
                 </Router>
+
+
+             
+
+
+         
 
 
 
@@ -197,40 +202,6 @@ class App extends Component {
 
 
                 {/* ----------------------------- NAVBAR */}
-
-
-
-
-
-                <nav class="navbar navbar-light bg-light">
-                    <form class="form-inline">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <span class="input-group-text" id="basic-addon1">@</span>
-                            </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1"></input>
-                        </div>
-                    </form>
-                </nav>
-
-                <nav class="navbar navbar-light bg-light">
-                    <form class="form-inline">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </form>
-                </nav>
-
-                <button class="btn btn-outline-success" type="button">Main button</button>
-                <button class="btn btn-sm btn-outline-secondary" type="button">Smaller button</button>
-
-
-
-
-
-
-
-
-
 
 
 

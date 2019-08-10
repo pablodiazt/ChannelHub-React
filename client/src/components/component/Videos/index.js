@@ -145,38 +145,38 @@ function Videos() {
                         <nav class="navbar navbar-dark bg-dark">
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
 
@@ -190,7 +190,7 @@ function Videos() {
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
                         </div>
                         {/* <!--Grid column--> */}
@@ -216,33 +216,33 @@ function Videos() {
                         <nav class="navbar navbar-dark bg-dark">
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video">
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                             {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>
 
                          
@@ -253,7 +253,7 @@ function Videos() {
                         <nav class="navbar navbar-light bg-light">
                            {/* <!-- Video --> */}
                             <div class="embed-responsive embed-responsive-1by1 w-25 p-3 video" >
-                                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+                                {/* <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe> */}
                             </div>  
                 <span class="navbar-text">
                     HTML Videos:
