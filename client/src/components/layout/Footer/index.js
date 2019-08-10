@@ -1,18 +1,14 @@
 import React from "react";
 
-import "./style.css";
 
-const Footer = () => {
-  return (
-    <h1>lkefj</h1>
+function Something() {
+    return (
+        <React.Fragment>
+            <div class="">
+                <h2></h2>
+            </div>
+        </React.Fragment>
+    );
+}
 
-    // <React.Fragment>
-    //     <h2>sww</h2>
-    // </React.Fragment>
-
-
-  );
-};
-
-
-export default Footer;
+export default Something;
