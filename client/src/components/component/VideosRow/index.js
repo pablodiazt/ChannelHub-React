@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Videos() {
+function VideosRow() {
     return (
         <React.Fragment>
 
@@ -121,4 +121,4 @@ function Videos() {
 };
 
 
-export default Videos;
+export default VideosRow;
