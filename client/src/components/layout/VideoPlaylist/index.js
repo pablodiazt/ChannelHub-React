@@ -3,13 +3,10 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // ---- COMPONENTS / LAYOUT:
-import Header from "../layout/Header"
-import Navbar from "../layout/Navbar";
-import Footer from "../layout/Footer";
+
 // ---- COMPONENTS / COMPONENT:
-import SearchBar from "../component/SearchBar";
-import Videos from "../component/VideosRow";
-import PlaylistName from "../component/PlaylistName"
+import VideosRow from "../../component/VideosRow";
+import PlaylistName from "../../component/PlaylistTitle"
 
 
 class Home extends Component {
@@ -21,13 +18,13 @@ class Home extends Component {
 
                 <Router>
                     <Route exact path="/" component={PlaylistName} />
-                    <Route exact path="/" component={Videos} />
+                    <Route exact path="/" component={VideosRow} />
                     <Route exact path="/" component={PlaylistName} />
-                    <Route exact path="/" component={Videos} />
+                    <Route exact path="/" component={VideosRow} />
                     <Route exact path="/" component={PlaylistName} />
-                    <Route exact path="/" component={Videos} />
+                    <Route exact path="/" component={VideosRow} />
                     <Route exact path="/" component={PlaylistName} />
-                    <Route exact path="/" component={Videos} />
+                    <Route exact path="/" component={VideosRow} />
                 </Router>
 
 
