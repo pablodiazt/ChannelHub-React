@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Something() {
+function PlaylistTitle() {
     return (
         <React.Fragment>
             {/* ----------- PLAYLIST NAME */}
@@ -14,4 +14,4 @@ function Something() {
     );
 }
 
-export default Something;
+export default PlaylistTitle;
