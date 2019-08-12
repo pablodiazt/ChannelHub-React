@@ -3,11 +3,12 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // ---- PAGES
-import VideoPlaylist from "./VideoPlaylist";
+
 // ---- LAYOUT:
 import Header from "../layout/Header"
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
+import VideoPlaylist from "../layout/VideoPlaylist";
 // ---- COMPONENT:
 import SearchBar from "../component/SearchBar";
 import VideosRow from "../component/VideosRow";
