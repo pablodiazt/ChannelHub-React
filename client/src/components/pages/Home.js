@@ -2,8 +2,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-// ---- PAGES
-
+// ---- PAGES:
 // ---- LAYOUT:
 import Header from "../layout/Header"
 import Navbar from "../layout/Navbar";
@@ -26,12 +25,10 @@ class Home extends Component {
                     <Route exact path="/" component={Header} />
                     <Route exact path="/" component={Navbar} />
                     <Route exact path="/" component={SearchBar} />
+                    {/* count playlists on db, add as many VideoPlaylists. {VideoPlaylist}  */}
                     <Route exact path="/" component={VideoPlaylist} />
                     <Route exact path="/" component={Footer} />
                 </Router>
-
-
-
 
 
 
