@@ -4,10 +4,9 @@ import "./style.css";
 function Header() {
     return (
         <React.Fragment>
-            {/* <header class=""> */}
 
 
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <nav class="navbar navbar-expand-sm navbar-light bg-light py-0 my-0 mr-0 mr-sm-0 ml-5">
 
                 <a class="navbar-brand" href="#"><h4>CustomTUBE</h4></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +31,7 @@ function Header() {
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-                    {/* <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    {/* <ul class="navbar-nav mr-auto">
                             <li class="nav-item active">
                                 <p></p>
                             </li>
@@ -44,18 +43,18 @@ function Header() {
                             </li>
                         </ul> */}
 
-                    <ul class="  my-2 my-lg-0">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+                    <ul class="ml-5 mr-0 my-2 my-lg-0">
+                        <button class="btn btn-secondary btn-sm my-2 my-sm-0" type="button" >Login</button>
                     </ul>
 
-                    <ul class="  my-2 my-lg-0">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">SignUp</button>
+                    <ul class="ml-0 my-2 my-lg-0">
+                        <button class="btn btn-secondary btn-sm my-2 my-sm-0" type="button" >SignUp</button>
                     </ul>
                 </div>
             </nav>
 
-            {/* </header> */}
-            <br></br><br></br>
+
+    
         </React.Fragment>
     );
 }

@@ -4,8 +4,6 @@ import ReactDOM from 'react-dom';
 // ---- files:
 import './App.css';
 import App from './App';
-// hosted fonts
-import WebFont from 'webfontloader';
 
 
 

@@ -12,16 +12,11 @@ class App extends Component {
         return (
             <React.Fragment>
 
-
-
                 <Router>
                     <Route exact path="/" component={Home} />
                 </Router>
 
-
-
             </React.Fragment>
-
         );
     }
 }

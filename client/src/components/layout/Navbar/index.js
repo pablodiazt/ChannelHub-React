@@ -6,7 +6,10 @@ import "./style.css";
 const NavBar = () => {
     return (
         <React.Fragment>
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+
+
+            <nav class="navbar-expand-sm navbar-light bg-light navbarTop">
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -40,7 +43,8 @@ const NavBar = () => {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Dropdown link
-        </a>
+                            </a>
+
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
@@ -82,6 +86,9 @@ const NavBar = () => {
           </ul>
         </div>
       </nav> */}
+
+
+
         </React.Fragment>
     );
 };
