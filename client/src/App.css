@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Days+One|Dosis:800&display=swap');
+
 body {
     background: rgb(226, 206, 206);
 }
@@ -19,15 +21,20 @@ footer {
     background: rgb(218, 207, 207);
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: rgb(5, 18, 44);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    /* color: rgb(5, 18, 44); */
+}
+
+.btn {
+    color: red;
+
 }
 
 p {
     color: rgb(36, 36, 78);
-}
-
-.title {
-    color: brown;
-    text-align: center;
 }

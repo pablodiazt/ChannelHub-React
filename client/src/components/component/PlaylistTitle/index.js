@@ -1,14 +1,17 @@
+// ---- dependencies:
 import React from "react";
+// ---- files:
 import "./style.css";
+
 
 function PlaylistTitle() {
     return (
         <React.Fragment>
             {/* ----------- PLAYLIST NAME */}
             <nav class="navbar navbar-light bg-light">
-                <span class="navbar-text">
-                    HTML Videos:
-                    </span>
+                    <h5>
+                       HTML Videos: 
+                    </h5>
             </nav>
         </React.Fragment>
     );
