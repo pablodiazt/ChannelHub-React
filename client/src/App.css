@@ -1,32 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Days+One|Dosis:800&display=swap');
+
 body {
-    background: rgb(119, 45, 45);
+    background: rgb(23, 46, 60);
 }
 
-header {
-    background: rgb(153, 140, 140);
+/* header {
+    background: rgb(23, 46, 60);
+} */
+
+
+
+/* div {
+    background: rgb(23, 46, 60);
+} */
+
+/* footer {
+    background: rgb(145, 136, 136);
+} */
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0rem;
+    font-weight: 500;
+    /* line-height: -12.8; */
 }
 
-nav {
-    background: rgb(153, 140, 140);
-}
-
-div {
-    background: rgb(153, 140, 140);
-}
-
-footer {
-    background: rgb(153, 140, 140);
-}
-
-h1, h2, h3, h4, h5, h6 {
-    color: rgb(161, 71, 44);
-}
+.btn {}
 
 p {
     color: rgb(36, 36, 78);
 }
 
-.title {
-    color: brown;
-    text-align: center;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .navbar {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
 }
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    padding-top: 0.5rem;
+    padding-right: 1rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1rem;
+}
+
+.navbar-light {
+    background-color: rgb(175, 159, 159);
+    height: 55px;
+    line-height: 14px;
+    letter-spacing: 0.1em;
+} */

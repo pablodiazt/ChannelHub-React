@@ -1,6 +1,19 @@
 .navbar-light {
-    background-color:rgb(0, 0, 0);
-    height: 34px;
-    line-height: 34px;
+    background-color: rgb(182, 36, 36);
+    /* height: 54px; */
+    /* line-height: 14px; */
     letter-spacing: 0.1em;
-  }
+}
+
+.navbarTop {
+    /* padding: 0 20% 0 20%; */
+    margin: 0 10% 0 10%;
+}
+
+.nav-link {
+    margin: 0% 150% 0 150%;
+}
+
+body {
+    background: rgb(23, 46, 60);
+}
