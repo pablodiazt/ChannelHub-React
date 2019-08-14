@@ -9,8 +9,8 @@ function PlaylistTitle() {
         <React.Fragment>
             {/* ----------- PLAYLIST NAME */}
             <nav class="navbar navbar-light bg-light">
-                    <h5>
-                       HTML Videos: 
+                <h5>
+                    HTML Videos:
                     </h5>
             </nav>
         </React.Fragment>

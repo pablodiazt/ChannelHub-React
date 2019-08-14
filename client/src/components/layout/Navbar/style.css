@@ -7,13 +7,18 @@
 
 .navbarTop {
     /* padding: 0 20% 0 20%; */
-    margin: 0 10% 0 10%;
+    margin: 0 30% 0 30%;
 }
 
 .nav-link {
-    margin: 0% 150% 0 150%;
+    margin: 0% 30% 0 20%;
 }
 
 body {
     background: rgb(23, 46, 60);
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
 }

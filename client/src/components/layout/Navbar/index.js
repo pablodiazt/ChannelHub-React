@@ -23,13 +23,22 @@ const NavBar = () => {
 
 
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">HTML</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">CSS</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Pricing</a>
+                            <a class="nav-link" href="#">JS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PHP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Python</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SQL</a>
                         </li>
 
 
