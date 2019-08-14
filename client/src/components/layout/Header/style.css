@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Audiowide|Orbitron:700&display=swap');
 
-.navbar-light .navbar-brand {
+/* .navbar-light .navbar-brand {
     color: rgba(255, 0, 0, 0.9);
-}
+} */
 
 .logo-PrtOne {
     text-align: left;
@@ -19,4 +19,10 @@
 
 body {
     background: rgb(23, 46, 60);
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
 }

@@ -22,3 +22,9 @@ body {
     padding-right: 1rem;
     padding-left: 1rem;
 }
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}

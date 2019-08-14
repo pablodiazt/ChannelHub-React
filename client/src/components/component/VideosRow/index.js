@@ -17,15 +17,19 @@ function VideosRow() {
                     {/* <!--Grid row--> */}
                     <div class="row">
 
+
+
+
+
+
+
                         {/* <!--------------Grid column--> */}
                         <div class="col-lg-2 col-md-12 mb-4">
-
                             {/* <!--Image--> */}
                             <div class="view overlay z-depth-1-half">
-                                <img src="https://www.youtube.com/watch?v=UB1O30fR-EE" class="img-fluid vidImage"
+                                <img src="https://youtu.be/hrZqiCUx6kg" class="img-fluid vidImage"
                                     alt="">
                                 </img>
-
                                 <a href="">
                                     <div class="mask rgba-white-light"></div>
                                 </a>
@@ -38,8 +42,9 @@ function VideosRow() {
                         <div class="col-lg-2 col-md-6 mb-4">
                             {/* <!--Image--> */}
                             <div class="view overlay z-depth-1-half">
-                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
-                                    alt=""></img>
+                                <iframe class="img-fluid vidImage" src="https://www.youtube.com/embed/hrZqiCUx6kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                {/* <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
+                                    alt=""></img> */}
                                 <a href="">
                                     <div class="mask rgba-white-light"></div>
                                 </a>
@@ -51,8 +56,7 @@ function VideosRow() {
                         <div class="col-lg-2 col-md-6 mb-4">
                             {/* <!--Image--> */}
                             <div class="view overlay z-depth-1-half">
-                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
-                                    alt=""></img>
+                                <iframe class="img-fluid vidImage" src="https://www.youtube.com/embed/8gNrZ4lAnAw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <a href="">
                                     <div class="mask rgba-white-light"></div>
                                 </a>
@@ -64,8 +68,7 @@ function VideosRow() {
                         <div class="col-lg-2 col-md-12 mb-4">
                             {/* <!--Image--> */}
                             <div class="view overlay z-depth-1-half">
-                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
-                                    alt=""></img>
+                                <iframe class="img-fluid vidImage" src="https://www.youtube.com/embed/y3UH2gAhwPI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <a href="">
                                     <div class="mask rgba-white-light"></div>
                                 </a>
@@ -77,13 +80,13 @@ function VideosRow() {
                         <div class="col-lg-2 col-md-6 mb-4">
                             {/* <!--Image--> */}
                             <div class="view overlay z-depth-1-half">
-                                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
-                                    alt=""></img>
+                                <iframe class="img-fluid vidImage" src="https://www.youtube.com/embed/3JluqTojuME" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                                 <a href="">
                                     <div class="mask rgba-white-light"></div>
                                 </a>
                             </div>
                         </div>
+
 
 
 
@@ -103,7 +106,7 @@ function VideosRow() {
 
 
 
-        </React.Fragment>
+        </React.Fragment >
     )
 };
 
