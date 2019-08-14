@@ -8,6 +8,7 @@ import Header from "../layout/Header"
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import VideoPlaylist from "../layout/VideoPlaylist";
+import Login from "./Login"
 // ---- COMPONENT:
 import SearchBar from "../component/SearchBar";
 import VideosRow from "../component/VideosRow";
