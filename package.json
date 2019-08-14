@@ -1,51 +1,53 @@
 {
-  "name": "your-time",
-  "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "server.js",
-  "directories": {
-    "test": "test"
-  },
-  "dependencies": {
-    "axios": "^0.19.0",
-    "bootstrap": "^4.3.1",
-    "express": "^4.17.1",
-    "gh": "^1.17.5",
-    "gh-pages": "^2.1.1",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.6.8",
-    "nodemon": "^1.19.1",
-    "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.1",
-    "webfontloader": "^1.6.28"
-  },
-  "devDependencies": {
-    "concurrently": "^4.1.1",
-    "nodemon": "^1.18.7",
-    "pages": "^0.0.16"
-  },
-  "scripts": {
-    "client": "cd client && npm run start",
-    "dev": "react-scripts start",
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "start:node": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start:prod": "nodemon server.js",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pablodiazt/Your-Time.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pablodiazt/Your-Time/issues"
-  },
-  "homepage": "https://github.com/pablodiazt/Your-Time#readme"
+    "name": "channel-hub",
+    "version": "1.0.0",
+    "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+    "main": "server.js",
+    "directories": {
+        "test": "test"
+    },
+    "dependencies": {
+        "axios": "^0.19.0",
+        "bootstrap": "^4.3.1",
+        "deploy-app": "^1.0.3",
+        "express": "^4.17.1",
+        "gh": "^1.17.5",
+        "gh-pages": "^2.1.1",
+        "if-env": "^1.0.4",
+        "mongoose": "^5.6.8",
+        "nodemon": "^1.19.1",
+        "react-dom": "^16.8.6",
+        "react-router-dom": "^5.0.1",
+        "webfontloader": "^1.6.28",
+        "yarn": "^1.17.3"
+    },
+    "devDependencies": {
+        "concurrently": "^4.1.1",
+        "nodemon": "^1.18.7",
+        "pages": "^0.0.16"
+    },
+    "scripts": {
+        "client": "cd client && npm run start",
+        "dev": "react-scripts start",
+        "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+        "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+        "start:node": "nodemon server.js",
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start:prod": "nodemon server.js",
+        "seed": "node scripts/seedDB.js",
+        "install": "cd client && npm install",
+        "build": "cd client && npm run build",
+        "heroku-postbuild": "npm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/pablodiazt/Your-Time.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/pablodiazt/Your-Time/issues"
+    },
+    "homepage": "https://github.com/pablodiazt/Your-Time#readme"
 }
