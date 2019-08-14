@@ -1,14 +1,18 @@
 import React from "react";
 import "./style.css";
 
+
 function Header() {
     return (
         <React.Fragment>
 
 
-            <nav class="navbar navbar-expand-sm navbar-light bg-light py-0 my-0 mr-0 mr-sm-0 ml-5">
+            <nav class="navbar navbar-expand-sm py-0 my-0 mr-0 mr-sm-0 ml-5">
 
-                <a class="navbar-brand" href="#"><h4>CustomTUBE</h4></a>
+                <a class="navbar-brand" href="#">
+                    <h2 class="logo-PrtOne">Channel</h2><h2 class="logo-PrtTwo">Hub</h2>
+                </a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -31,18 +35,6 @@ function Header() {
 
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-                    {/* <ul class="navbar-nav mr-auto">
-                            <li class="nav-item active">
-                                <p></p>
-                            </li>
-                            <li class="nav-item">
-                                <p></p>
-                            </li>
-                            <li class="nav-item">
-                                <p></p>
-                            </li>
-                        </ul> */}
-
                     <ul class="ml-5 mr-0 my-2 my-lg-0">
                         <button class="btn btn-secondary btn-sm my-2 my-sm-0" type="button" >Login</button>
                     </ul>
@@ -54,7 +46,7 @@ function Header() {
             </nav>
 
 
-    
+
         </React.Fragment>
     );
 }

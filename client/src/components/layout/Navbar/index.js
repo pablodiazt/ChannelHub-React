@@ -9,7 +9,7 @@ const NavBar = () => {
 
 
 
-            <nav class="navbar-expand-sm navbar-light bg-light navbarTop">
+            <nav class="navbar-expand-sm navbarTop">
 
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,15 +20,8 @@ const NavBar = () => {
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" type="button">HTML</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" type="button">PHP</button>
-                        </li>
-                        <li class="nav-item">
-                            <button class="btn btn-sm btn-outline-secondary" type="button">HTML</button>
-                        </li>
+
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
                         </li>
@@ -40,17 +33,7 @@ const NavBar = () => {
                         </li>
 
 
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                Dropdown link
-                            </a>
 
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
                     </ul>
                 </div>
             </nav>

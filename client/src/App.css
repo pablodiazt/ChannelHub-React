@@ -1,24 +1,29 @@
 @import url('https://fonts.googleapis.com/css?family=Days+One|Dosis:800&display=swap');
 
 body {
-    background: rgb(136, 230, 82);
+    background: rgb(23, 46, 60);
 }
 
-header {
-    background: rgb(133, 182, 204);
+/* header {
+    background: rgb(23, 46, 60);
+} */
+
+.bg-light {
+    background: rgb(177, 182, 185);
 }
 
-nav {
-    background: rgb(117, 124, 163);
+.navbar-light {
+    background: rgb(11, 8, 218);
 }
 
-div {
-    background: rgb(131, 63, 63);
-}
 
-footer {
+/* div {
+    background: rgb(23, 46, 60);
+} */
+
+/* footer {
     background: rgb(145, 136, 136);
-}
+} */
 
 .h1,
 .h2,
@@ -42,6 +47,32 @@ h6 {
 p {
     color: rgb(36, 36, 78);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* .navbar {
     position: relative;
