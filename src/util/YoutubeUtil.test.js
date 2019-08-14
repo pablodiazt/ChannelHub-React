@@ -1,7 +1,7 @@
 // @flow
 
 import YoutubeUtil from './YoutubeUtil'
-import type { Video } from '../components/types.js'
+import type { Video } from '../components/types'
 import data from './api-search-sample.json'
 
 describe('YoutubeUtil', () => {
