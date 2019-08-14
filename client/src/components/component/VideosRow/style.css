@@ -1,0 +1,29 @@
+.vidImage {
+    /* margin: 35% 20% 2% 2%; */
+}
+
+
+.videoRow {
+    background: rgb(236, 23, 8);
+}
+
+/* .img-fluid {
+    box-sizing: initial;
+    padding: 0;
+    border: 0;
+} */
+
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+        float: left;
+        width: 210px;
+        /* max-width: 117px; */
+        border: 0;
+        border-radius: 0;
+    }
+}
+
+.carousel-multi-item-2 .card img {
+    border-radius: 0;
+    border: 0;
+}
