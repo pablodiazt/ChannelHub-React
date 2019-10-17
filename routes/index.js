@@ -1,6 +1,5 @@
 const path = require("path");
 const router = require("express").Router();
-const reactapp = require("../client/src");
 
 // serve react app on '/'
 router.use(function (req, res) {
