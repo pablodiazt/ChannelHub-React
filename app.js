@@ -6,6 +6,7 @@ var mongoose = require('mongoose');
 
 //var indexRouter = require('./routes/index');
 var accountsRouter = require('./routes/api/accounts');
+var indexRouter = require('./routes/index');
 var db = require('./config').mongoURI;
 
 var app = express();
@@ -31,12 +32,12 @@ mongoose
     .catch(err => console.log(err));
 
 // configure express routers
+
 app.use('/api/accounts', accountsRouter);
+app.use('*', indexRouter); 
 
 // redirect all requests that don't match above to react-router
-app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname+'/client/public/index.html'));
-});
+
 
 var port = 4000;
 module.exports = app.listen(port);
