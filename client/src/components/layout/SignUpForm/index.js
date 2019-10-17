@@ -1,6 +1,7 @@
 // dependencies:
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 // ---- COMPONENTS / COMPONENT:
 // ---- files:
 import './style.css';
@@ -72,8 +73,6 @@ class Home extends Component {
                 <div class="signInBox text-center">
                     <p>Have an account? <a href="#" class="loginLink">Log in</a></p>
                 </div>
-
-
 
 
 

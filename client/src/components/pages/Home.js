@@ -12,8 +12,6 @@ import Footer from "../layout/Footer";
 import VideoPlaylist from "../layout/VideoPlaylist";
 // ---- COMPONENT:
 import SearchBar from "../component/SearchBar";
-import VideosRow from "../component/VideosRow";
-import PlaylistTitle from "../component/PlaylistTitle"
 
 
 class Home extends Component {
@@ -21,19 +19,13 @@ class Home extends Component {
         return (
             <React.Fragment>
 
-
-
                 <Router>
-                    <Route exact path="/" component={Header} />
-                    <Route exact path="/" component={Navbar} />
-                    <Route exact path="/" component={SearchBar} />
-                    {/* count playlists on db, add as many VideoPlaylists. {VideoPlaylist}  */}
-                    <Route exact path="/" component={VideoPlaylist} />
-                    <Route exact path="/" component={Footer} />
-                    <Route exact path="/" component={SignUp} />
+                    <Route path="/" component={Header} />
+                    <Route path="/" component={Navbar} />
+                    <Route path="/" component={SearchBar} />
+                    <Route path="/" component={VideoPlaylist} />
+                    <Route path="/" component={Footer} />
                 </Router>
-
-
 
             </React.Fragment>
         );
