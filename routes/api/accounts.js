@@ -7,6 +7,7 @@ const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const secretOrKey = require('../../config').secretOrKey;
 const emailModule = require('../../modules/email');
+
 //need to add jwt and passport support for generating tokens, and sending those tokens back from /login route
 
 // assumed structure for properly formatted request body:

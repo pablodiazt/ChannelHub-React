@@ -17,8 +17,12 @@ POST request, with the following body
 `{ username: "username", email: "email" }`
 
 ##### Results:
-Status code 200 - success
-** Not Implemented **
+Status code 200 - Success. Returns json object with success boolean "true", and "token" object (JWT token for future api requests)
+`{ success: true, token: 'some-token-here' }`
+Client should store the JWT token, and send as part of the "Authorization" header when making requests to secure endpoints.
+
+Status code 401 - Login Failure due to bad username/password combination.
+`{ success: false, error: "error string" }`
 
 #### /api/accounts/verification
 GET request, with the following URL string:
