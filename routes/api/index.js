@@ -3,7 +3,7 @@ const homePage = require("./homePage");
 // const videoRoutes = require("./videos");
 
 console.log("------>>>>on routes api index")
-// 
+
 router.use("/home", homePage);
 
 // Video routes

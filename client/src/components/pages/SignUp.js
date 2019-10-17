@@ -1,14 +1,28 @@
-import React from "react";
+// dependencies:
+import React, { Component } from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+// ---- LAYOUT:
+import SignUpForm from "../layout/SignUpForm";
+// ---- COMPONENT:
 
 
-function Something() {
-    return (
-        <React.Fragment>
-            <div class="">
-                <h2></h2>
-            </div>
-        </React.Fragment>
-    );
+class SignUp extends Component {
+    render() {
+        return (
+            <React.Fragment>
+
+
+
+                <Router>
+                    <Route exact path="/" component={SignUpForm} />
+                </Router>
+
+
+
+            </React.Fragment>
+        );
+    }
+
 }
 
-export default Something;
+export default SignUp;

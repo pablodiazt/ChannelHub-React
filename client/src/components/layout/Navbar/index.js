@@ -1,6 +1,10 @@
+// dependencies:
 import React from "react";
+// ---- COMPONENTS / COMPONENT:
 // import { Link, NavLink } from "react-router-dom";
+// ---- files:
 import "./style.css";
+
 
 
 const NavBar = () => {
