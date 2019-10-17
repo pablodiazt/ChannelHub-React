@@ -1,4 +1,10 @@
+// dependencies:
 import React from "react";
+// ---- COMPONENTS / COMPONENT:
+// ---- files:
+import "./style.css";
+
+
 import "./style.css";
 
 
@@ -40,7 +46,7 @@ function Header() {
                     </ul>
 
                     <ul class="ml-0 my-2 my-lg-0">
-                        <button class="btn btn-secondary btn-sm my-2 my-sm-0" type="button" >SignUp</button>
+                        <button onclick="window.location.href = 'https://google.com';" class="btn btn-secondary btn-sm my-2 my-sm-0" type="button" >SignUp</button>
                     </ul>
                 </div>
             </nav>
