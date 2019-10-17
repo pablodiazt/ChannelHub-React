@@ -4,6 +4,8 @@ var validation = require('../../modules/validation');
 const User = require('../../models/User')
 const uuid = require('uuid/v4'); //use random uuid's for email validation tokens
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const secretOrKey = require('../../config').secretOrKey;
 const emailModule = require('../../modules/email');
 //need to add jwt and passport support for generating tokens, and sending those tokens back from /login route
 
@@ -72,7 +74,7 @@ router.post('/login', function(req, res, next) {
 	    bcrypt.compare(body.password, user.password, function(err, hashres) {
 		if (err) throw err;
 		if (hashres) {
-		    res.status(200).json({ success: true })
+		    res.status(200).json({ success: true, token: jwt.sign({username: user.username}, secretOrKey) })
 		} else {
 		    res.status(401).json({ success: false, error: "username and password combination incorrect" })
 		}
