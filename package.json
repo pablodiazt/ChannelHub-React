@@ -1,7 +1,7 @@
 {
     "name": "channel-hub",
     "version": "1.0.0",
-    "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+    "description": "",
     "main": "server.js",
     "directories": {
         "test": "test"
@@ -41,13 +41,13 @@
     },
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/pablodiazt/Your-Time.git"
+        "url": "git+https://github.com/pablodiazt/ChannelHub.git"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "bugs": {
-        "url": "https://github.com/pablodiazt/Your-Time/issues"
+        "url": "https://github.com/pablodiazt/ChannelHub/issues"
     },
-    "homepage": "https://github.com/pablodiazt/Your-Time#readme"
+    "homepage": "https://github.com/pablodiazt/ChannelHub"
 }

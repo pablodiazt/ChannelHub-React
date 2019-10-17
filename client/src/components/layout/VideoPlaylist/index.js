@@ -1,7 +1,6 @@
 // dependencies:
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-// ---- COMPONENTS / LAYOUT:
 // ---- COMPONENTS / COMPONENT:
 import VideosRow from "../../component/VideosRow";
 import PlaylistName from "../../component/PlaylistTitle"

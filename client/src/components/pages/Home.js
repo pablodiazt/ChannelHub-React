@@ -3,12 +3,13 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 // ---- PAGES:
+import Login from "./Login"
+import SignUp from "./SignUp";
 // ---- LAYOUT:
 import Header from "../layout/Header"
 import Navbar from "../layout/Navbar";
 import Footer from "../layout/Footer";
 import VideoPlaylist from "../layout/VideoPlaylist";
-import Login from "./Login"
 // ---- COMPONENT:
 import SearchBar from "../component/SearchBar";
 import VideosRow from "../component/VideosRow";
@@ -29,6 +30,7 @@ class Home extends Component {
                     {/* count playlists on db, add as many VideoPlaylists. {VideoPlaylist}  */}
                     <Route exact path="/" component={VideoPlaylist} />
                     <Route exact path="/" component={Footer} />
+                    <Route exact path="/" component={SignUp} />
                 </Router>
 
 
