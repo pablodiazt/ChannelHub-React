@@ -14,7 +14,7 @@ class SignUp extends Component {
 
 
                 <Router>
-                    <Route exact path="/" component={SignUpForm} />
+                    <Route path="/" component={SignUpForm} />
                 </Router>
 
 
