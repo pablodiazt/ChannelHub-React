@@ -74,7 +74,7 @@ router.post('/login', function(req, res, next) {
 	    bcrypt.compare(body.password, user.password, function(err, hashres) {
 		if (err) throw err;
 		if (hashres) {
-		    res.status(200).json({ success: true, token: jwt.sign({username: user.username}, secretOrKey) })
+		    res.status(200).json({ success: true, token: jwt.sign({username: user.username}, secretOrKey, {expiresIn: "1 day"} )})
 		} else {
 		    res.status(401).json({ success: false, error: "username and password combination incorrect" })
 		}
