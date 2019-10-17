@@ -35,7 +35,7 @@ app.use('/api/accounts', accountsRouter);
 
 // redirect all requests that don't match above to react-router
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname+'/client/build/index.html'));
+    res.sendFile(path.join(__dirname+'/client/public/index.html'));
 });
 
 var port = 4000;
