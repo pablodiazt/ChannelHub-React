@@ -40,21 +40,14 @@ router.post('/register', function(req, res, next) {
 		validationToken: token
 	    });
 
-	    bcrypt.genSalt(10, (err, salt) => {
-		bcrypt.hash(newUser.password, salt, (err, hash) => {
-		    if (err) throw err;
-		    newUser.password = hash;
-		    newUser
-			.save()
-			.then(user => res.json(user))
-			.catch(err => console.log(err));
-		});
-	    });
+	    newUser.save()
+		.then(user => res.json(user))
+		.catch(err => console.log(err));
 
 	    var subject = "Verify your ChannelHub Account";
 	    var messageBody = `Please use the following link to verify your account, and then login to access ChannelHub: http://localhost:3000/api/accounts/validation?uid=${body.username}&token=${token}`
 	    var htmlBody = `Please use the following link to verify your account, and then login to access ChannelHub: <a href="http://localhost:3000/api/accounts/validation?uid=${body.username}&token=${token}"> Verify your account! </a>`
-	    emailModule.testmail(subject, body, htmlBody);
+ 	    emailModule.testmail(subject, body, htmlBody);
 	    //send nodemailer email
 	}
     });
