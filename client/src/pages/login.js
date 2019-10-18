@@ -31,7 +31,7 @@ class Login extends React.Component {
 		 console.log(response.data);
 		 if (response.status === 200) {
 		     alert("Logged in!");
-		     
+		     localStorage.setItem("jsonwebtoken", response.data.token);
 		     self.setState({redirect: true});
 		 }
 		 else {
@@ -47,7 +47,7 @@ class Login extends React.Component {
     
     render () {
 	if (this.state.redirect) {
-	    return( <Redirect to={{pathname: '/', state: 'Account Created. Please verify your email address and login'}} />);
+	    return( <Redirect to={{pathname: '/', state: ''}} />);
 	}
 	return (
 		<div>
