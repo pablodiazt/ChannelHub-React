@@ -12,7 +12,7 @@ function log(error) {
 }
 
 // Interface of logService has two methods -- init and log
-export default {
-  init,
-  log
-};
+//export default {
+//  init,
+//  log
+//};
