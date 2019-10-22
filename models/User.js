@@ -15,11 +15,14 @@ UserSchema.pre('save', function(next) {
     if (this.isModified("password")) {
     	var pw = this.password;
 	bcrypt.genSalt(10, (err, salt) => {
-	    bcrypt.hash(pw, salt, (err, hash) => {
-		if (err) throw err;
-		this.password = hash;
-		next();
-	    });
+	    if (err) throw err;
+	    else {
+		bcrypt.hash(pw, salt, (err, hash) => {
+		    if (err) throw err;
+		    this.password = hash;
+		    next();
+		});
+	    }
 	});
     }
     else {
