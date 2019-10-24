@@ -6,14 +6,14 @@ const noembedPatterns = require('../config').noembed;
 const PlaylistSchema = new Schema({
     title: { type: String, required: true },
     description: String,
-    channel: { type: String, required: true}, //objectID string
-    tags: [String],
-    content: [{
+    channel: { type: String, required: true}, //objectID string corresponding to channel document in db 
+    tags: [String], // string array of tags, that we can use to make decisions about relevant playlists for users later
+    content: [{ // array of content objects, each one corresponds to a video, image, or text document that is put into the playlist by a user
 	title: String,
 	url: String,
-	backend: { type: String, enum: ['react-player', 'react-twitter-embed', 'noembed', 'external'], required: true },
-	isArchived: { type: Boolean, default: false },
-	thumbnailUrl: String
+	backend: { type: String, enum: ['react-player', 'react-twitter-embed', 'noembed', 'external', 'und' ], required: true }, // renderer for embeds, for use in react (filled by post-save hook, shoukd never be 'und' after save.
+	isArchived: { type: Boolean, default: false }, // for use later, with archive.is content (hence default no)
+	thumbnailUrl: String // empty if no thumbnail could be found by noembed (would also correspond to 'external' backend
     }]
 });
 
