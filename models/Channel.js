@@ -9,7 +9,12 @@ const ChannelSchema = new Schema({
     tags: [String]
 })
 
-ChannelSchema.pre('save' function(next) {
+ChannelSchema.pre('delete', function(next) {
+    // should delete all playlists associated with this channel (do a find() for this channel's objectID in playlists collection)
+    next();
+});
+
+ChannelSchema.pre('save', function(next) {
     // check all playlists associated and pull new tags and add to tags array
     next();
 });
