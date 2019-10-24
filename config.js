@@ -6,165 +6,165 @@ module.exports = {
     noembed: {
 	all: [
 	    {
-		"patterns": [
+		patterns: [
 		    "http://www\\.clickhole\\.com/[^/]+/[^/]?"
 		],
 		"name": "Clickhole"
 	    },
 	    {
 		"name": "CloudApp",
-		"patterns": [
+		patterns: [
 		    "http://cl\\.ly/(?:image/)?[0-9a-zA-Z]+/?$"
 		]
 	    },
 	    {
 		"name": "Boing Boing",
-		"patterns": [
+		patterns: [
 		    "http://boingboing\\.net/\\d{4}/\\d{2}/\\d{2}/[^/]+\\.html"
 		]
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://path\\.com/p/([0-9a-zA-Z]+)$"
 		],
 		"name": "Path"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://(?:www\\.)?avclub\\.com/article/[^/]+/?$"
 		],
 		"name": "The AV Club"
 	    },
 	    {
 		"name": "Spreaker",
-		"patterns": [
+		patterns: [
 		    "https?://(?:www\\.)spreaker\\.com/.+"
 		]
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://www\\.nooledge\\.com/\\!/Vid/.+",
 		    "https?://v\\.nldg\\.me/.+"
 		],
 		"name": "Nooledge"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://soundcloud.com/.*/.*"
 		],
 		"name": "SoundCloud"
 	    },
 	    {
 		"name": "Twitter",
-		"patterns": [
+		patterns: [
 		    "https?://(?:www|mobile\\.)?twitter\\.com/(?:#!/)?([^/]+)/status(?:es)?/(\\d+)"
 		]
 	    },
 	    {
 		"name": "Urban Dictionary",
-		"patterns": [
+		patterns: [
 		    "http://www\\.urbandictionary\\.com/define\\.php\\?term=.+"
 		]
 	    },
 	    {
 		"name": "Vimeo",
-		"patterns": [
+		patterns: [
 		    "https?://(?:www\\.)?vimeo\\.com/.+"
 		]
 	    },
 	    {
 		"name": "iTunes Movie Trailers",
-		"patterns": [
+		patterns: [
 		    "http://trailers\\.apple\\.com/trailers/[^/]+/[^/]+"
 		]
 	    },
 	    {
 		"name": "ASCII Art Farts",
-		"patterns": [
+		patterns: [
 		    "http://www\\.asciiartfarts\\.com/[0-9]+\\.html"
 		]
 	    },
 	    {
 		"name": "Monoprice",
-		"patterns": [
+		patterns: [
 		    "http://www\\.monoprice\\.com/products/product\\.asp\\?.*p_id=\\d+"
 		]
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "http://(?:www\\.)?theverge\\.com/\\d{4}/\\d{1,2}/\\d{1,2}/\\d+/[^/]+/?$"
 		],
 		"name": "The Verge"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "http://www.traileraddict.com/trailer/[^/]+/trailer"
 		],
 		"name": "TrailerAddict"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "http://www\\.duffelblog\\.com/\\d{4}/\\d{1,2}/[^/]+/?$"
 		],
 		"name": "The Duffel Blog"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://(?:www\\.)?wired\\.com/([^/]+/)?\\d+/\\d+/[^/]+/?$"
 		],
 		"name": "Wired"
 	    },
 	    {
 		"name": "VICE",
-		"patterns": [
+		patterns: [
 		    "https?://(?:www\\.)?vice\\.com/[^/]+/?"
 		]
 	    },
 	    {
 		"name": "Qik",
-		"patterns": [
+		patterns: [
 		    "http://qik\\.com/video/.*"
 		]
 	    },
 	    {
 		"name": "XKCD",
-		"patterns": [
+		patterns: [
 		    "http://(?:www\\.)?xkcd\\.com/\\d+/?"
 		]
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://(?:www.)?skitch.com/([^/]+)/[^/]+/.+",
 		    "http://skit.ch/[^/]+"
 		],
 		"name": "Skitch"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "http://lockerz\\.com/[sd]/\\d+"
 		],
 		"name": "Lockerz"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "http://gfycat\\.com/([a-zA-Z]+)"
 		],
 		"name": "Gfycat"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "http://picplz\\.com/user/[^/]+/pic/[^/]+"
 		],
 		"name": "Picplz"
 	    },
 	    {
 		"name": "Twitpic",
-		"patterns": [
+		patterns: [
 		    "http://(?:www\\.)?twitpic\\.com/([^/]+)"
 		]
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "http://www\\.twitlonger\\.com/show/[a-zA-Z0-9]+",
 		    "http://tl\\.gd/[^/]+"
 		],
@@ -172,25 +172,25 @@ module.exports = {
 	    },
 	    {
 		"name": "Ars Technica",
-		"patterns": [
+		patterns: [
 		    "http://arstechnica\\.com/[^/]+/\\d+/\\d+/[^/]+/?$"
 		]
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "http://www\\.theonion\\.com/articles?/[^/]+/?"
 		],
 		"name": "The Onion"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://news.vice\\.com/[^/]+/?"
 		],
 		"name": "VICE News"
 	    },
 	    {
 		"name": "oEmbed",
-		"patterns": [
+		patterns: [
 		    "https?://www\\.23hq\\.com/.*/photo/.*",
 		    "https?://alpha\\.app\\.net/.*/post/.*",
 		    "https?://photos\\.app\\.net/.*/.*",
@@ -468,67 +468,67 @@ module.exports = {
 		]
 	    },
 	    {
-		"name": "Vine",
-		"patterns": [
+		name: "Vine",
+		patterns: [
 		    "https?://vine.co/v/[a-zA-Z0-9]+"
 		]
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://muki\\.io/(embed/)?(.+)"
 		],
-		"name": "Muki"
+		name: "Muki"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://imgur\\.com/(?:[^\\/]+/)?[0-9a-zA-Z]+$"
 		],
-		"name": "Imgur"
+		name: "Imgur"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://www\\.(dropbox\\.com/s/.+\\.(?:jpg|png|gif))",
 		    "https?://db\\.tt/[a-zA-Z0-9]+"
 		],
-		"name": "Dropbox"
+		name: "Dropbox"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https://tube.switch.ch/videos/([a-z0-9]+)"
 		],
-		"name": "SWITCHTube"
+		name: "SWITCHTube"
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "http://www\\.amazon\\.com/(?:.+/)?[gd]p/(?:product/)?(?:tags-on-product/)?([a-zA-Z0-9]+)",
 		    "http://amzn\\.com/([^/]+)"
 		],
-		"name": "Amazon"
+		name: "Amazon"
 	    },
 	    {
-		"name": "Bash.org",
-		"patterns": [
+		name: "Bash.org",
+		patterns: [
 		    "http://bash\\.org/\\?(\\d+)"
 		]
 	    },
 	    {
-		"name": "GiantBomb",
-		"patterns": [
+		name: "GiantBomb",
+		patterns: [
 		    "https?://www\\.giantbomb\\.com/videos/[^/]+/\\d+-\\d+/?"
 		]
 	    },
 	    {
-		"name": "GlobalGiving",
-		"patterns": [
+		name: "GlobalGiving",
+		patterns: [
 		    "https?://www\\.globalgiving\\.org/((micro)?projects|funds)/.*"
 		]
 	    },
 	    {
-		"patterns": [
+		patterns: [
 		    "https?://(?:[^\\.]+\\.)?youtube\\.com/watch/?\\?(?:.+&)?v=([^&]+)",
 		    "https?://(?:[^\\.]+\\.)?(?:youtu\\.be|youtube\\.com/embed)/([a-zA-Z0-9_-]+)"
 		],
-		"name": "YouTube"
+		name: "YouTube"
 	    }
 	],
 	reactPlayer: [
