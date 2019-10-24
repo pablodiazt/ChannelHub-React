@@ -4,7 +4,10 @@ var validation = require('../../modules/validation');
 const User = require('../../models/User')
 const uuid = require('uuid/v4'); //use random uuid's for email validation tokens
 const bcrypt = require('bcryptjs');
+const jwt = require('jsonwebtoken');
+const secretOrKey = require('../../config').secretOrKey;
 const emailModule = require('../../modules/email');
+
 //need to add jwt and passport support for generating tokens, and sending those tokens back from /login route
 
 // assumed structure for properly formatted request body:
@@ -40,21 +43,14 @@ router.post('/register', function(req, res, next) {
 		validationToken: token
 	    });
 
-	    bcrypt.genSalt(10, (err, salt) => {
-		bcrypt.hash(newUser.password, salt, (err, hash) => {
-		    if (err) throw err;
-		    newUser.password = hash;
-		    newUser
-			.save()
-			.then(user => res.json(user))
-			.catch(err => console.log(err));
-		});
-	    });
+	    newUser.save()
+		.then(user => res.json(user))
+		.catch(err => console.log(err));
 
 	    var subject = "Verify your ChannelHub Account";
 	    var messageBody = `Please use the following link to verify your account, and then login to access ChannelHub: http://localhost:3000/api/accounts/validation?uid=${body.username}&token=${token}`
 	    var htmlBody = `Please use the following link to verify your account, and then login to access ChannelHub: <a href="http://localhost:3000/api/accounts/validation?uid=${body.username}&token=${token}"> Verify your account! </a>`
-	    emailModule.testmail(subject, body, htmlBody);
+ 	    emailModule.testmail(subject, body, htmlBody);
 	    //send nodemailer email
 	}
     });
@@ -79,7 +75,7 @@ router.post('/login', function(req, res, next) {
 	    bcrypt.compare(body.password, user.password, function(err, hashres) {
 		if (err) throw err;
 		if (hashres) {
-		    res.status(200).json({ success: true })
+		    res.status(200).json({ success: true, token: jwt.sign({username: user.username}, secretOrKey, {expiresIn: "1 day"} )})
 		} else {
 		    res.status(401).json({ success: false, error: "username and password combination incorrect" })
 		}
