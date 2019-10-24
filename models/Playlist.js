@@ -33,7 +33,7 @@ PlaylistSchema.pre('save', function(next) {
 	while (!patternMatch && patternCounter < patterns.length) {
 	    patterns[patternCounter].patterns.forEach(function(regexElement) {
 		var regex = new RegExp(regexElement);
-		if (!patternMatch && regex.test(contentElement)) {
+		if (!patternMatch && regex.test(contentElement.url)) {
 		    patternMatch = true;
 		}
 	    }); // end forEach loop
@@ -75,11 +75,10 @@ PlaylistSchema.pre('save', function(next) {
 function getThumbnailUrl(url) {
     axios.get("https://noembed.com/embed?url="+url)
 	.then(function(response) {
-	    return {error: false, thumbnailUrl: response.data.thumbnail_url};
+	    return response.data.thumbnail_url;
 	})
 	.catch(function(error) {
 	    console.log(error);
-	    return {error: true};
 	})
 }
 
