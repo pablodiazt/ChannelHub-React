@@ -3,6 +3,8 @@ var router = express.Router();
 const Playlist = require('../../models/Playlist');
 // const Channel = require('../../models/Channel');
 const jwt = require('jsonwebtoken');
+var validation = require('../../modules/validation');
+const is = require('is_js');
 
 // *=required
 // {
@@ -18,11 +20,40 @@ const jwt = require('jsonwebtoken');
 //   ]
 // } 
 router.post('/create', function(req, res) {
+    const body = req.body;
+
     // check to see if fields are existing and valid
+    const {isValid, errors} = validation.createPlaylist(body);
+    // at least one error found, return errors object
+    if (!isValid) {
+	return res.status(400).json(errors);
+    }
+
+    const newPlaylistData = {
+	title: body.title,
+	description: body.description,
+	channel: body.channel,
+	content: body.content
+    };
+
+    if (is.existy(body.tags)) {
+	newPlaylistData.tags = body.tags;
+    }
     // does content array contain at least one element?
     // create db object & save
+    var newPlaylist = new Playlist(newPlaylistData);
+
+    newPlaylist.save()
+	.then(playlist => {
+	    return res.status(200).json({
+		title: playlist.title,
+		description: playlist.description,
+		content: playlist.content
+	    });
+	})
+	.catch(err => {console.log(err); return res.status(400).json({success: false, error: err});}); 
     // return expanded value set from post-save hook to user
-    res.status(501);
+    // res.status(501);
 });
 
 router.post('/delete', function(req, res) {
