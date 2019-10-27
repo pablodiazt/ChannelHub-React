@@ -7,7 +7,7 @@ const PlaylistSchema = new Schema({
     title: { type: String, required: true },
     description: String,
     channel: { type: String, required: true}, //objectID string corresponding to channel document in db 
-    tags: [String], // string array of tags, that we can use to make decisions about relevant playlists for users later
+    tags: { type: [String], default: [] }, // string array of tags, that we can use to make decisions about relevant playlists for users later
     content: [{ // array of content objects, each one corresponds to a video, image, or text document that is put into the playlist by a user
 	title: String,
 	url: String,
