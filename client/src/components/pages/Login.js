@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-ro
 import axios from 'axios';
 
 // ---- LAYOUTS:
-import LoginForm from "../layout/LoginForm";
+//import LoginForm from "../layout/LoginForm";
 
 class Login extends React.Component {
     constructor(props) {
