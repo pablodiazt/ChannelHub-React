@@ -1,7 +1,8 @@
 // dependencies:
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Redirect, Link } from "react-router-dom";
 import axios from 'axios';
+import Card from 'react-bootstrap/Card';
 
 // ---- COMPONENTS:
 // files:
@@ -9,34 +10,41 @@ import "./style.css";
 
 
 class ContentCard extends Component {
+    constructor(props) {
+        super(props);
+    }
+    
     render() {
-        return (
-            <React.Fragment>
+	if (this.props.backend == 'playlist') {
+	    console.log("playlist");
+	    var link = '/playlist/' + this.props.playlistID;
+	    return (
+		    <React.Fragment>
+		    <Card style={{width:'12rem'}}>
+		    <Card.Body>
+		    <Card.Title> {this.props.title} </Card.Title>
+		    <Card.Text> {this.props.description} </Card.Text>
+		    <Card.Link style={{color:'blue'}} href={link}> Open Playlist </Card.Link>
+		    </Card.Body>
+		    </Card>
+		    </React.Fragment>
+	    );
+	} else {
+            return (
+		    <React.Fragment>
 
+		    <Card style={{width:'12rem'}}>
+		    <Card.Img variant="top" src={this.props.thumbnailUrl} />
+		    <Card.Body>
+		    <Card.Title> {this.props.title} </Card.Title>
+		    <Card.Link style={{color:'blue'}} href={this.props.url}> Open Content </Card.Link>
+		    </Card.Body>
+		    </Card>
 
-                <div class="view overlay z-depth-1-half">
-                    <img src="https://youtu.be/hrZqiCUx6kg" class="img-fluid vidImage"
-                        alt="">
-                    </img>
-                    <a href="">
-                        <div class="mask rgba-white-light"></div>
-                    </a>
-                </div>
-
-
-                <div class="view overlay z-depth-1-half">
-                    <iframe class="img-fluid vidImage" src="https://www.youtube.com/embed/hrZqiCUx6kg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    {/* <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
-                                    alt=""></img> */}
-                    <a href="">
-                        <div class="mask rgba-white-light"></div>
-                    </a>
-                </div>
-
-
-            </React.Fragment >
-        );
+		</React.Fragment >
+            );
+	}
     }
 }
 
-export default ContentCard;
+    export default ContentCard;

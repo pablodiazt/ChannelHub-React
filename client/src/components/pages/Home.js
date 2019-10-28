@@ -9,7 +9,7 @@ import SignUp from "./SignUp";
 // ---- LAYOUTS:
 import VideoPlaylist from "../layout/VideoPlaylist";
 // ---- COMPONENTS:
-
+import ContentCardContainer from "../layout/ContentCardContainer";
 
 class Home extends Component {
 
@@ -40,7 +40,7 @@ class Home extends Component {
             return (
                 <React.Fragment>
                     <Router>
-                        <Route exact path="/" component={VideoPlaylist} />
+                        <Route exact path="/" component={ContentCardContainer} />
                     </Router>
                 </React.Fragment>
             );

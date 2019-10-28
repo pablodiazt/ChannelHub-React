@@ -54,7 +54,17 @@ router.post('/delete', function(req, res) {
 });
 
 router.post('/fetch', function(req, res) {
-    res.status(501);
+    Channel.find({ owningUser: req.body.username }).then(channels => {
+	var returnVals = {};
+	channels.forEach(function(element) {
+	    returnVals += {
+		title: element.title,
+		description: element.description,
+		channelID: element._id.toString()
+	    }
+	});
+	res.status(200).json(returnVals)
+    });
 });
 
 router.post('/update', function(req, res) {
