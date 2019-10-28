@@ -38,7 +38,7 @@ class Home extends Component {
         return (
             <React.Fragment>
                 <Router>
-                    <Route exact path="/" component={VideoPlaylist} />
+                    <Route exact path="/" component={ContentCardContainer} />
                 </Router>
             </React.Fragment>
         );
