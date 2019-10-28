@@ -3,12 +3,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 import axios from 'axios';
 
-<<<<<<< HEAD
-// ---- LAYOUTS:
-import LoginForm from "../layout/LoginForm";
-
-=======
->>>>>>> 4db680370133bee56ef73b210a27a0dd3b014b17
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -65,6 +59,7 @@ class Login extends React.Component {
                 {/* Brand Logo */ }
                 < div class="navbar-brand" >
                     <h2 class="logo-PrtOneForm">Channel</h2> <h2 class="logo-PrtTwoForm">Hub</h2>
+
                     </div >
 
             <h2 class="font-weight-bold text-secondary d-block">Login</h2>
@@ -81,7 +76,6 @@ class Login extends React.Component {
             </div >
 	    
             </React.Fragment >
-
         );
     }
 }
