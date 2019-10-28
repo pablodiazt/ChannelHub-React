@@ -3,12 +3,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 import axios from 'axios';
 
-<<<<<<< HEAD
-// ---- LAYOUTS:
-import LoginForm from "../layout/LoginForm";
-
-=======
->>>>>>> 4db680370133bee56ef73b210a27a0dd3b014b17
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -58,28 +52,6 @@ class Login extends React.Component {
             return (<Redirect to={{ pathname: '/', state: '' }} />);
         }
         return (
-
-<<<<<<< HEAD
-
-            <div>
-                <h2>Login</h2>
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} />
-                    <br />
-                    <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
-                    <br />
-                    <input type="submit" value="Submit" />
-                </form>
-            </div>
-
-
-            // <React.Fragment>
-            //     <Router>
-            //         <LoginForm
-            //             <Route path="/" component={LoginForm} />
-            //     </Router>
-            // </React.Fragment>
-=======
             {/* --------- FORM BOX */}
                 < div class="formBox text-center" >
 
@@ -102,8 +74,6 @@ class Login extends React.Component {
                 </div >
 	    
             </React.Fragment>
->>>>>>> 4db680370133bee56ef73b210a27a0dd3b014b17
-
         );
     }
 }
