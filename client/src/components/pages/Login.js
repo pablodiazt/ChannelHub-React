@@ -12,7 +12,8 @@ class Login extends React.Component {
         this.state = {
             username: '',
             password: '',
-            redirect: false
+            redirect: false,
+	    autherror: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -40,12 +41,10 @@ class Login extends React.Component {
                     localStorage.setItem("jsonwebtoken", response.data.token);
                     self.setState({ redirect: true });
                 }
-                else {
-                    alert("Failed to login")
-                }
             })
             .catch(function (error) {
-                console.log(error)
+		self.setState({ autherror: "This username and password combination is incorrect" });
+		console.log(error)
             });
 
         event.preventDefault();
@@ -68,6 +67,7 @@ class Login extends React.Component {
 
                 <h2 class="font-weight-bold text-secondary d-block">Login</h2>
 		<br />
+		<p style={{color:'red'}}>{this.state.autherror}</p>
                     <form onSubmit={this.handleSubmit}>
                         <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} class="form-control" id="exampleInputName" />                        <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} class="form-control" id="exampleInputPassword1" />
                         <br />
