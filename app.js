@@ -6,6 +6,7 @@ var mongoose = require('mongoose');
 
 //var indexRouter = require('./routes/index');
 var accountsRouter = require('./routes/api/accounts');
+var playlistRouter = require('./routes/api/playlist');
 var indexRouter = require('./routes/index');
 var db = require('./config').mongoURI;
 
@@ -34,6 +35,7 @@ mongoose
 // configure express routers
 
 app.use('/api/accounts', accountsRouter);
+app.use('/api/playlist', playlistRouter);
 app.use('*', indexRouter); 
 
 // redirect all requests that don't match above to react-router

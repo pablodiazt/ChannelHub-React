@@ -93,15 +93,15 @@ module.exports = {
 	    if (!(is.array(reqData.content) && is.all.object(reqData.content))) {
 		errors.content = "You must supply a content array of objects";
 	    } else {
-		reqData.forEach(function(contentObject) {
-		    if (!(is.existy(contentObject.title) && is.existy(contentObject.url))) {
-			errors.content = "Invalid content object contents. content array should contain {title:string, url:string} objects";
+		reqData.content.forEach(function(contentObject) {
+		    if (!(is.existy(contentObject.title) && is.existy(contentObject.contentUrl))) {
+			errors.content = "Invalid content object contents. content array should contain {title:string, contentUrl:string} objects";
 		    } else {
 			if (!(is.string(contentObject.title) && !is.empty(contentObject.title))) {
-			    errors.content.title = "content title must be a non-empty string";
+			    errors.content = "content title must be a non-empty string";
 			}
-			if (!is.url(contentObject.url)) {
-			    errors.content.url = "content url is not a valid url";
+			if (!is.url(contentObject.contentUrl)) {
+			    errors.content = "content url is not a valid url";
 			}
 		    }
 		});
