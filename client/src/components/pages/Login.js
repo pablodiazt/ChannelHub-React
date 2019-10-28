@@ -3,9 +3,6 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 import axios from 'axios';
 
-// ---- LAYOUTS:
-//import LoginForm from "../layout/LoginForm";
-
 class Login extends React.Component {
     constructor(props) {
         super(props);
@@ -37,7 +34,7 @@ class Login extends React.Component {
             .then(function (response) {
                 console.log(response.data);
                 if(response.status === 200) {
-                    alert("Logged in!");
+                    //alert("Logged in!");
                     localStorage.setItem("jsonwebtoken", response.data.token);
                     self.setState({ redirect: true });
                 }
