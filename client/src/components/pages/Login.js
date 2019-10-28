@@ -52,9 +52,9 @@ class Login extends React.Component {
             return (<Redirect to={{ pathname: '/', state: '' }} />);
         }
         return (
-
+	    <React.Fragment>
             {/* --------- FORM BOX */ }
-            < div class="formBox text-center" >
+            <div class="formBox text-center" >
 
                 {/* Brand Logo */ }
                 < div class="navbar-brand" >
