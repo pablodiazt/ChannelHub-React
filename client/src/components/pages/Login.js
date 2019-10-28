@@ -52,30 +52,31 @@ class Login extends React.Component {
             return (<Redirect to={{ pathname: '/', state: '' }} />);
         }
         return (
+            <React.Fragment>
 
-            {/* --------- FORM BOX */ }
-            < div class="formBox text-center" >
+                {/* --------- FORM BOX */}
+                <div class="formBox text-center">
 
-                {/* Brand Logo */ }
-                < div class="navbar-brand" >
-                    <h2 class="logo-PrtOneForm">Channel</h2> <h2 class="logo-PrtTwoForm">Hub</h2>
+                    {/* Brand Logo */}
+                    <div class="navbar-brand">
+                        <h2 class="logo-PrtOneForm">Channel</h2> <h2 class="logo-PrtTwoForm">Hub</h2>
 
-                    </div >
+                    </div>
 
-            <h2 class="font-weight-bold text-secondary d-block">Login</h2>
-            <br />
-            <p style={{ color: 'red' }}>{this.state.autherror}</p>
-            <form onSubmit={this.handleSubmit}>
-                <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} class="form-control" id="exampleInputName" />                        <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} class="form-control" id="exampleInputPassword1" />
-                <br />
-                <button type="submit" value="Submit" class="btn btn-primary btn-sm formBtn font-weight-bold">Log In</button>
-            </form>
+                    <h2 class="font-weight-bold text-secondary d-block">Login</h2>
+                    <br />
+                    <p style={{ color: 'red' }}>{this.state.autherror}</p>
+                    <form onSubmit={this.handleSubmit}>
+                        <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} class="form-control" id="exampleInputName" />                        <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} class="form-control" id="exampleInputPassword1" />
+                        <br />
+                        <button type="submit" value="Submit" class="btn btn-primary btn-sm formBtn font-weight-bold">Log In</button>
+                    </form>
                 </div >
-            < div class="signInBox text-center" >
-                <p>Don't have an account? <Link to='/signup' class="loginLink">Create an Account!</Link></p>
-            </div >
-	    
-            </React.Fragment >
+                <div class="signInBox text-center" >
+                    <p>Don't have an account? <Link to='/signup' class="loginLink">Create an Account!</Link></p>
+                </div>
+
+            </React.Fragment>
         );
     }
 }
