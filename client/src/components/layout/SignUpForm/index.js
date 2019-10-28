@@ -77,17 +77,17 @@ class Home extends Component {
                     <br></br>
 		<form onSubmit={this.handleSubmit}>
                         {/* Email */}
-                        <input type="email" class="form-control" name="email" onChange={this.handleChange} /* value={this.state.email} */ id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"></input>
+                        <input type="email" class="form-control" name="email" onChange={this.handleChange} value={this.state.email} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"></input>
                         <small id="emailHelp" class="form-text text-muted">We\'ll never share your email with anyone else.</small>
 
                         {/* Username */}
-                        <input type="text" name="username" onChange={this.handleChange} /* value={this.state.username} */ class="form-control" id="exampleInputName" placeholder="Username"></input>
+                        <input type="text" name="username" onChange={this.handleChange} value={this.state.username} class="form-control" id="exampleInputName" placeholder="Username"></input>
 
                         {/* Password */}
-                        <input type="password" name="password" onChange={this.handleChange} /* value={this.state.password} */ class="form-control" id="exampleInputPassword1" placeholder="Password"></input>
+                        <input type="password" name="password" onChange={this.handleChange} value={this.state.password} class="form-control" id="exampleInputPassword1" placeholder="Password"></input>
 
                         {/* Password */}
-                        <input type="password" name="passwordVerify" onChange={this.handleChange} /* value={this.state.passwordVerify} */ class="form-control" id="exampleInputPassword1" placeholder="Verify Password"></input>
+                        <input type="password" name="passwordVerify" onChange={this.handleChange} value={this.state.passwordVerify} class="form-control" id="exampleInputPassword1" placeholder="Verify Password"></input>
 
                         {/* Sign up */}
                         <button type="submit" value="Submit" class="btn btn-primary btn-sm formBtn font-weight-bold">Sign up</button>

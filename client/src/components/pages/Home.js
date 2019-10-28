@@ -28,10 +28,11 @@ class Home extends Component {
             );
 	}
         return (
-            <div>
+            <div class="formBox text-center">
                 <h1>Welcome!</h1>
-                <h3>Please <Link to="/login">login</Link> to continue.</h3>
-            </div>
+		<br />
+                <h3 class="font-weight-bold text-secondary d-block">Please <Link to="/login" style={{color:'blue'}}>login</Link> to continue.</h3>
+		</div>
         );
 	
 
