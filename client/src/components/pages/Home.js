@@ -27,29 +27,29 @@ class Home extends Component {
             //         </div>
             //     );
             // }
-            // return (
-            //     <div>
-            //         <h1> home</h1>
-            //         <h3> Please login to continue.</h3>
-            //     </div>
-            // );
+            //return (
+            //    <div>
+            //        <h1> home</h1>
+            //        <h3> Please login to continue.</h3>
+            //    </div>
+            //);
 
-        }
-        return (
-            <React.Fragment>
-                <Router>
+        
+            return (
+		    <React.Fragment>
+                    <Router>
                     <Route exact path="/" component={ContentCardContainer} />
-                </Router>
-            </React.Fragment>
+                    </Router>
+		    </React.Fragment>
+            );
+	}
+        return (
+                <div class="formBox text-center">
+                <h1>Welcome!</h1>
+                <br />
+                <h3 class="font-weight-bold text-secondary d-block">Please <Link to="/login" style={{ color: 'blue' }}>login</Link> to continue.</h3>
+                </div>
         );
-
-        //        return (
-        //            <div class="formBox text-center">
-        //                <h1>Welcome!</h1>
-        //                <br />
-        //                <h3 class="font-weight-bold text-secondary d-block">Please <Link to="/login" style={{ color: 'blue' }}>login</Link> to continue.</h3>
-        //            </div>
-        //        );
 
     }
 }
