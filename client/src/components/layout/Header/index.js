@@ -1,6 +1,7 @@
 // dependencies:
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import jwt from 'jsonwebtoken';
 
 // ---- PAGES:
 import Login from "../../pages/Login";
@@ -19,18 +20,46 @@ class Header extends React.Component {
             <React.Fragment>
 
                 <nav class="navbar navbar-expand-sm py-0 my-0 mr-0 mr-sm-0 ml-5">
+		<HeaderLeft />
+		<HeaderRight />
+                </nav>
 
-                    <Route path="/" component={Logo} />
-                    <Route path="/" component={SearchBar} />
+            </React.Fragment >
+        );
+    }
+}
 
+class HeaderLeft extends React.Component {
+    render() {
+    return (
+	<React.Fragment>
+	    <Route path="/" component={Logo} />
+            <Route path="/" component={SearchBar} />
+	    </React.Fragment>
+    );
+    }
+}
 
-                    {/* ? */}
-                    {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button> */}
-
-
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+// deterministic header, displays user's name & logout button if logged in, otherwise login and signup buttons.
+class HeaderRight extends React.Component {
+    render () {
+	var token = localStorage.getItem("jsonwebtoken");
+	if(token !== null) {
+           var decodedToken = jwt.decode(token);
+           var username = decodedToken.username;
+	    return(
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+		    <ul class="ml-5 mr-0 my-2 my-lg-0">
+		    <h6 style={{color:'white'}}>Welcome, {username}!</h6>                        
+                    </ul>
+		    <ul class="ml-0 my-2 my-lg-0">
+		    <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/logout">Logout</Link>
+		    </ul>
+		    </div>
+	    );
+	}
+	return (
+	<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
                         {/* ---- LOGIN */}
                         <ul class="ml-5 mr-0 my-2 my-lg-0">
@@ -45,13 +74,9 @@ class Header extends React.Component {
                             <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/signup">SignUp</Link>
                         </ul>
 
-                    </div>
-                </nav>
-
-            </React.Fragment >
-        );
+        </div>
+    );
     }
 }
-
 
 export default Header;

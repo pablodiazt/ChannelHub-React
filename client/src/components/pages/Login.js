@@ -3,16 +3,20 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 import axios from 'axios';
 
+<<<<<<< HEAD
 // ---- LAYOUTS:
 import LoginForm from "../layout/LoginForm";
 
+=======
+>>>>>>> 4db680370133bee56ef73b210a27a0dd3b014b17
 class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
             username: '',
             password: '',
-            redirect: false
+            redirect: false,
+	    autherror: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -36,16 +40,14 @@ class Login extends React.Component {
             .then(function (response) {
                 console.log(response.data);
                 if(response.status === 200) {
-                    alert("Logged in!");
+                    //alert("Logged in!");
                     localStorage.setItem("jsonwebtoken", response.data.token);
                     self.setState({ redirect: true });
                 }
-                else {
-                    alert(response.data)
-                }
             })
             .catch(function (error) {
-                console.log(error)
+		self.setState({ autherror: "This username and password combination is incorrect" });
+		console.log(error)
             });
 
         event.preventDefault();
@@ -57,6 +59,7 @@ class Login extends React.Component {
         }
         return (
 
+<<<<<<< HEAD
 
             <div>
                 <h2>Login</h2>
@@ -76,6 +79,30 @@ class Login extends React.Component {
             //             <Route path="/" component={LoginForm} />
             //     </Router>
             // </React.Fragment>
+=======
+            {/* --------- FORM BOX */}
+                < div class="formBox text-center" >
+
+                    {/* Brand Logo */}
+                    < div class="navbar-brand" >
+                        <h2 class="logo-PrtOneForm">Channel</h2> <h2 class="logo-PrtTwoForm">Hub</h2>
+                    </div >
+
+                <h2 class="font-weight-bold text-secondary d-block">Login</h2>
+		<br />
+		<p style={{color:'red'}}>{this.state.autherror}</p>
+                    <form onSubmit={this.handleSubmit}>
+                        <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} class="form-control" id="exampleInputName" />                        <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} class="form-control" id="exampleInputPassword1" />
+                        <br />
+                        <button type="submit" value="Submit"class="btn btn-primary btn-sm formBtn font-weight-bold">Log In</button>
+                    </form>
+                </div>
+		< div class="signInBox text-center" >
+                    <p>Don't have an account? <Link to='/signup' class="loginLink">Create an Account!</Link></p>
+                </div >
+	    
+            </React.Fragment>
+>>>>>>> 4db680370133bee56ef73b210a27a0dd3b014b17
 
         );
     }

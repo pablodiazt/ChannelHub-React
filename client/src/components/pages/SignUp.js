@@ -81,13 +81,7 @@ class SignUp extends Component {
     render() {
         return (
             <React.Fragment>
-
-
-                <Router>
-                    <Route path="/" component={SignUpForm} />
-                </Router>
-
-
+                    <SignUpForm />
             </React.Fragment>
         );
     }
