@@ -27,14 +27,6 @@ class Home extends Component {
 		</React.Fragment>
             );
 	}
-	    
-        //     return (
-        //         <div>
-        //             <h1> home</h1>
-        //             <h3> Welcome, {username}!</h3>
-        //         </div>
-        //     );
-        // }
         return (
             <div>
                 <h1>Welcome!</h1>

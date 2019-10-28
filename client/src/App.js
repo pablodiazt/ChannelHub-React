@@ -7,7 +7,7 @@ import jwt from 'jsonwebtoken';
 import Home from "./components/pages/Home";
 import SignUp from "./components/pages/SignUp";
 import Login from "./components/pages/Login";
-import Logout from "./components/pages/Logout";
+// import Logout from "./components/pages/Logout";
 import NotFound from "./components/pages/NotFound";
 // ---- LAYOUTS:
 import Header from "./components/layout/Header"
@@ -39,12 +39,12 @@ import './App.css';
 //     );
 // }
 
-// function Logout() {
-//     localStorage.removeItem("jsonwebtoken");
-//     return (
-//         <Redirect to='/' />
-//     );
-// }
+ function Logout() {
+     localStorage.removeItem("jsonwebtoken");
+     return (
+         <Redirect to='/' />
+     );
+ }
 
 function App() {
     return (
@@ -61,6 +61,7 @@ function App() {
 
             <Route path="/signup" component={SignUp} />
             <Route path="/login" component={Login} />
+	    <Route exact path="/logout" component={Logout} />
             {/* <Route exact path="/logout" component={Logout} /> */}
 
             <Route exact path="/404" component={NotFound} />
