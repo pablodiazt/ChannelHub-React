@@ -113,5 +113,8 @@ module.exports = {
 	    isValid: is.empty(errors),
 	    errors
 	}
+    },
+    createChannel: function(reqData) {
+	return {isValid: true};
     }
 }

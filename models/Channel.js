@@ -5,8 +5,8 @@ const ChannelSchema = new Schema({
     title: { type: String, required: true },
     description: { type: String, required: false },
     owningUser: { type: String, required: true }, // debate on using username or objectID string representation, not sure.
-    collaborators: [String],
-    tags: [String]
+    collaborators: { type: [String], default: [] },
+    tags: { type: [String], default: [] }
 })
 
 ChannelSchema.pre('delete', function(next) {
