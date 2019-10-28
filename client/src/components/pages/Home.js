@@ -4,8 +4,6 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import jwt from 'jsonwebtoken';
 
 // ---- PAGES:
-import Login from "./Login"
-import SignUp from "./SignUp";
 // ---- LAYOUTS:
 import VideoPlaylist from "../layout/VideoPlaylist";
 // ---- COMPONENTS:
@@ -36,22 +34,22 @@ class Home extends Component {
             //     </div>
             // );
 
-	}
-            return (
-                <React.Fragment>
-                    <Router>
-                        <Route exact path="/" component={ContentCardContainer} />
-                    </Router>
-                </React.Fragment>
-            );
-        
-//        return (
-//            <div class="formBox text-center">
-//                <h1>Welcome!</h1>
-//                <br />
-//                <h3 class="font-weight-bold text-secondary d-block">Please <Link to="/login" style={{ color: 'blue' }}>login</Link> to continue.</h3>
-//            </div>
-//        );
+        }
+        return (
+            <React.Fragment>
+                <Router>
+                    <Route exact path="/" component={VideoPlaylist} />
+                </Router>
+            </React.Fragment>
+        );
+
+        //        return (
+        //            <div class="formBox text-center">
+        //                <h1>Welcome!</h1>
+        //                <br />
+        //                <h3 class="font-weight-bold text-secondary d-block">Please <Link to="/login" style={{ color: 'blue' }}>login</Link> to continue.</h3>
+        //            </div>
+        //        );
 
     }
 }

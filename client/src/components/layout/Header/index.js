@@ -20,8 +20,8 @@ class Header extends React.Component {
             <React.Fragment>
 
                 <nav class="navbar navbar-expand-sm py-0 my-0 mr-0 mr-sm-0 ml-5">
-		<HeaderLeft />
-		<HeaderRight />
+                    <HeaderLeft />
+                    <HeaderRight />
                 </nav>
 
             </React.Fragment >
@@ -31,51 +31,51 @@ class Header extends React.Component {
 
 class HeaderLeft extends React.Component {
     render() {
-    return (
-	<React.Fragment>
-	    <Route path="/" component={Logo} />
-            <Route path="/" component={SearchBar} />
-	    </React.Fragment>
-    );
+        return (
+            <React.Fragment>
+                <Route path="/" component={Logo} />
+                <Route path="/" component={SearchBar} />
+            </React.Fragment>
+        );
     }
 }
 
 // deterministic header, displays user's name & logout button if logged in, otherwise login and signup buttons.
 class HeaderRight extends React.Component {
-    render () {
-	var token = localStorage.getItem("jsonwebtoken");
-	if(token !== null) {
-           var decodedToken = jwt.decode(token);
-           var username = decodedToken.username;
-	    return(
-		<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-		    <ul class="ml-5 mr-0 my-2 my-lg-0">
-		    <h6 style={{color:'white'}}>Welcome, {username}!</h6>                        
+    render() {
+        var token = localStorage.getItem("jsonwebtoken");
+        if(token !== null) {
+            var decodedToken = jwt.decode(token);
+            var username = decodedToken.username;
+            return (
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="ml-5 mr-0 my-2 my-lg-0">
+                        <h6 style={{ color: 'white' }}>Welcome, {username}!</h6>
                     </ul>
-		    <ul class="ml-0 my-2 my-lg-0">
-		    <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/logout">Logout</Link>
-		    </ul>
-		    </div>
-	    );
-	}
-	return (
-	<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="ml-0 my-2 my-lg-0">
+                        <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/logout">Logout</Link>
+                    </ul>
+                </div>
+            );
+        }
+        return (
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-                        {/* ---- LOGIN */}
-                        <ul class="ml-5 mr-0 my-2 my-lg-0">
-                            {/* <button class="btn btn-secondary btn-sm my-2 my-sm-0" type="button" >Login</button> */}
-                            <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/login">Login</Link>
-                        </ul>
+                {/* ---- LOGIN */}
+                <ul class="ml-5 mr-0 my-2 my-lg-0">
+                    {/* <button class="btn btn-secondary btn-sm my-2 my-sm-0" type="button" >Login</button> */}
+                    <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/login">Login</Link>
+                </ul>
 
 
-                        {/* ---- SIGNUP */}
-                        <ul class="ml-0 my-2 my-lg-0">
-                            {/* <button onClick={() => history.push('signup')} class="btn btn-secondary btn-sm my-2 my-sm-0" type="button"> SignUp</button> */}
-                            <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/signup">SignUp</Link>
-                        </ul>
+                {/* ---- SIGNUP */}
+                <ul class="ml-0 my-2 my-lg-0">
+                    {/* <button onClick={() => history.push('signup')} class="btn btn-secondary btn-sm my-2 my-sm-0" type="button"> SignUp</button> */}
+                    <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/signup">SignUp</Link>
+                </ul>
 
-        </div>
-    );
+            </div>
+        );
     }
 }
 

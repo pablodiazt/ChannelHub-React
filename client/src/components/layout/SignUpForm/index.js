@@ -61,7 +61,7 @@ class Home extends Component {
         return (
             <React.Fragment>
 
-            {/* --------- FORM BOX */}
+                {/* --------- FORM BOX */}
                 < div class="formBox text-center" >
 
                     {/* Brand Logo */}
@@ -73,10 +73,10 @@ class Home extends Component {
                     < p class="font-weight-bold text-secondary d-block" > Sign up to start learning from your most relevant content.</p >
 
                     <br></br>
-		<form onSubmit={this.handleSubmit}>
+                    <form onSubmit={this.handleSubmit}>
                         {/* Email */}
                         <input type="email" class="form-control" name="email" onChange={this.handleChange} value={this.state.email} id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email"></input>
-                        <small id="emailHelp" class="form-text text-muted">We\'ll never share your email with anyone else.</small>
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 
                         {/* Username */}
                         <input type="text" name="username" onChange={this.handleChange} value={this.state.username} class="form-control" id="exampleInputName" placeholder="Username"></input>
@@ -89,7 +89,7 @@ class Home extends Component {
 
                         {/* Sign up */}
                         <button type="submit" value="Submit" class="btn btn-primary btn-sm formBtn font-weight-bold">Sign up</button>
-		</form>
+                    </form>
                     <br></br>
                     {/* Terms and conditions */}
                     <small class="form-text text-muted">By signing up, you agree to our <a href="#" class="termsLink text-muted"><b>Terms and Conditions</b>.</a></small>
