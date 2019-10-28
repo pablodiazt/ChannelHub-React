@@ -48,7 +48,9 @@ router.post('/create', function(req, res) {
 	    return res.status(200).json({
 		title: playlist.title,
 		description: playlist.description,
-		content: playlist.content
+		content: playlist.content,
+		channel: playlist.channel,
+		playlistID: playlist._id.toString()
 	    });
 	})
 	.catch(err => {console.log(err); return res.status(400).json({success: false, error: err});}); 
