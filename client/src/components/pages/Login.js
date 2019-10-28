@@ -4,9 +4,9 @@ import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-ro
 import axios from 'axios';
 
 // ---- LAYOUTS:
-import LoginForm from "../LoginForm";
+import LoginForm from "../layout/LoginForm";
 
-class Login extends Component {
+class Login extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -57,17 +57,16 @@ class Login extends Component {
         }
         return (
             <React.Fragment>
-
-                <Router>
-                    <Route exact path="/" component={VideoPlaylist} />
-                </Router>
-
-            </React.Fragment>
-
-            <React.Fragment>
-                <Router>
-                    <Route path="/" component={LoginForm} />
-                </Router>
+                <div>
+                    <h2>Login</h2>
+                    <form onSubmit={this.handleSubmit}>
+                        <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} />
+                        <br />
+                        <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
+                        <br />
+                        <input type="submit" value="Submit" />
+                    </form>
+                </div>
             </React.Fragment>
 
         );

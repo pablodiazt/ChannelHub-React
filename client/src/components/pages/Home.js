@@ -1,6 +1,7 @@
 // dependencies:
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import jwt from 'jsonwebtoken';
 
 // ---- PAGES:
 import Login from "./Login"
@@ -14,10 +15,19 @@ import VideoPlaylist from "../layout/VideoPlaylist";
 class Home extends Component {
 
     render() {
-        // var token = localStorage.getItem("jsonwebtoken");
-        // if(token !== null) {
-        //     var decodedToken = jwt.decode(token);
-        //     var username = decodedToken.username;
+        var token = localStorage.getItem("jsonwebtoken");
+        if(token !== null) {
+            var decodedToken = jwt.decode(token);
+            var username = decodedToken.username;
+	    return (
+		<React.Fragment>
+                    <Router>
+                        <Route exact path="/" component={VideoPlaylist} />
+                    </Router>
+		</React.Fragment>
+            );
+	}
+	    
         //     return (
         //         <div>
         //             <h1> home</h1>
@@ -25,23 +35,23 @@ class Home extends Component {
         //         </div>
         //     );
         // }
-        // return (
-        //     <div>
-        //         <h1> home</h1>
-        //         <h3> Please login to continue.</h3>
-        //     </div>
-        // );
-
-
         return (
-            <React.Fragment>
-
-                <Router>
-                    <Route exact path="/" component={VideoPlaylist} />
-                </Router>
-
-            </React.Fragment>
+            <div>
+                <h1>Welcome!</h1>
+                <h3>Please <Link to="/login">login</Link> to continue.</h3>
+            </div>
         );
+	
+
+//        return (
+//            <React.Fragment>
+
+//                <Router>
+//                    <Route exact path="/" component={VideoPlaylist} />
+//                </Router/>
+
+//            </React.Fragment>
+//        );
     }
 }
 
