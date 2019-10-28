@@ -53,16 +53,6 @@ class Home extends Component {
 //            </div>
 //        );
 
-
-        //        return (
-        //            <React.Fragment>
-
-        //                <Router>
-        //                    <Route exact path="/" component={VideoPlaylist} />
-        //                </Router/>
-
-        //            </React.Fragment>
-        //        );
     }
 }
 
