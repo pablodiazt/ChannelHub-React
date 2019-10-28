@@ -16,7 +16,7 @@ class Login extends React.Component {
             username: '',
             password: '',
             redirect: false,
-	    autherror: ''
+            autherror: ''
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -46,8 +46,8 @@ class Login extends React.Component {
                 }
             })
             .catch(function (error) {
-		self.setState({ autherror: "This username and password combination is incorrect" });
-		console.log(error)
+                self.setState({ autherror: "This username and password combination is incorrect" });
+                console.log(error)
             });
 
         event.preventDefault();
@@ -59,50 +59,28 @@ class Login extends React.Component {
         }
         return (
 
-<<<<<<< HEAD
+            {/* --------- FORM BOX */ }
+            < div class="formBox text-center" >
 
-            <div>
-                <h2>Login</h2>
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} />
-                    <br />
-                    <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
-                    <br />
-                    <input type="submit" value="Submit" />
-                </form>
-            </div>
-
-
-            // <React.Fragment>
-            //     <Router>
-            //         <LoginForm
-            //             <Route path="/" component={LoginForm} />
-            //     </Router>
-            // </React.Fragment>
-=======
-            {/* --------- FORM BOX */}
-                < div class="formBox text-center" >
-
-                    {/* Brand Logo */}
-                    < div class="navbar-brand" >
-                        <h2 class="logo-PrtOneForm">Channel</h2> <h2 class="logo-PrtTwoForm">Hub</h2>
+                {/* Brand Logo */ }
+                < div class="navbar-brand" >
+                    <h2 class="logo-PrtOneForm">Channel</h2> <h2 class="logo-PrtTwoForm">Hub</h2>
                     </div >
 
-                <h2 class="font-weight-bold text-secondary d-block">Login</h2>
-		<br />
-		<p style={{color:'red'}}>{this.state.autherror}</p>
-                    <form onSubmit={this.handleSubmit}>
-                        <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} class="form-control" id="exampleInputName" />                        <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} class="form-control" id="exampleInputPassword1" />
-                        <br />
-                        <button type="submit" value="Submit"class="btn btn-primary btn-sm formBtn font-weight-bold">Log In</button>
-                    </form>
-                </div>
-		< div class="signInBox text-center" >
-                    <p>Don't have an account? <Link to='/signup' class="loginLink">Create an Account!</Link></p>
+            <h2 class="font-weight-bold text-secondary d-block">Login</h2>
+            <br />
+            <p style={{ color: 'red' }}>{this.state.autherror}</p>
+            <form onSubmit={this.handleSubmit}>
+                <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} class="form-control" id="exampleInputName" />                        <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} class="form-control" id="exampleInputPassword1" />
+                <br />
+                <button type="submit" value="Submit" class="btn btn-primary btn-sm formBtn font-weight-bold">Log In</button>
+            </form>
                 </div >
+            < div class="signInBox text-center" >
+                <p>Don't have an account? <Link to='/signup' class="loginLink">Create an Account!</Link></p>
+            </div >
 	    
-            </React.Fragment>
->>>>>>> 4db680370133bee56ef73b210a27a0dd3b014b17
+            </React.Fragment >
 
         );
     }
