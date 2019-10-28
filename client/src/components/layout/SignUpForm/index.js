@@ -4,62 +4,62 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import axios from 'axios';
 
 // ---- COMPONENTS:
-// ---- files:
+// files:
 
 
 import './style.css';
 
 
 class Home extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            email: '',
-            username: '',
-            password: '',
-            passwordVerify: '',
-            redirect: false
-        };
+    // constructor(props) {
+    //     super(props);
+    //     this.state = {
+    //         email: '',
+    //         username: '',
+    //         password: '',
+    //         passwordVerify: '',
+    //         redirect: false
+    //     };
 
-        // setup event listensers
-        this.handleChange = this.handleChange.bind(this);
-        this.handleSubmit = this.handleSubmit.bind(this);
-    }
+    //     // setup event listensers
+    //     this.handleChange = this.handleChange.bind(this);
+    //     this.handleSubmit = this.handleSubmit.bind(this);
+    // }
 
-    // changes state in real time based on object that changed
-    handleChange(event) {
-        const target = event.target;
-        const value = target.value;
-        const name = target.name;
+    // // changes state in real time based on object that changed
+    // handleChange(event) {
+    //     const target = event.target;
+    //     const value = target.value;
+    //     const name = target.name;
 
-        this.setState({
-            [name]: value
-        });
-    }
+    //     this.setState({
+    //         [name]: value
+    //     });
+    // }
 
-    // handle submission button click, will redirect to home if successfully posts when page is re-rendered
-    handleSubmit(event) {
-        console.log(this.state);
-        var self = this;
-        axios.post("/api/accounts/register", this.state)
-            .then(function (response) {
-                console.log(response.data);
-                if(response.status === 200) {
-                    alert("Account Created Successfully!");
-                    self.setState({ redirect: true });
-                }
-            })
-            .catch(function (error) {
-                console.log(error)
-            });
+    // // handle submission button click, will redirect to home if successfully posts when page is re-rendered
+    // handleSubmit(event) {
+    //     console.log(this.state);
+    //     var self = this;
+    //     axios.post("/api/accounts/register", this.state)
+    //         .then(function (response) {
+    //             console.log(response.data);
+    //             if(response.status === 200) {
+    //                 alert("Account Created Successfully!");
+    //                 self.setState({ redirect: true });
+    //             }
+    //         })
+    //         .catch(function (error) {
+    //             console.log(error)
+    //         });
 
-        event.preventDefault();
-    }
+    //     event.preventDefault();
+    // }
 
     render() {
-        if(this.state.redirect) {
-            return (<Redirect to={{ pathname: '/', state: 'Account Created. Please verify your email address and login' }} />);
-        }
+        // if(this.state.redirect) {
+        //     return (<Redirect to={{ pathname: '/', state: 'Account Created. Please verify your email address and login' }} />);
+        // }
         return (
             <React.Fragment>
 

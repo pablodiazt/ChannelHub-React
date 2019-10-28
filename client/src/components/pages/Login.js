@@ -1,8 +1,12 @@
+// dependencies:
 import React from 'react';
-import { BrowserRouter, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch, Link, Redirect } from "react-router-dom";
 import axios from 'axios';
 
-class Login extends React.Component {
+// ---- LAYOUTS:
+import LoginForm from "../LoginForm";
+
+class Login extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -52,16 +56,20 @@ class Login extends React.Component {
             return (<Redirect to={{ pathname: '/', state: '' }} />);
         }
         return (
-            <div>
-                <h2>Login</h2>
-                <form onSubmit={this.handleSubmit}>
-                    <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} />
-                    <br />
-                    <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
-                    <br />
-                    <input type="submit" value="Submit" />
-                </form>
-            </div>
+            <React.Fragment>
+
+                <Router>
+                    <Route exact path="/" component={VideoPlaylist} />
+                </Router>
+
+            </React.Fragment>
+
+            <React.Fragment>
+                <Router>
+                    <Route path="/" component={LoginForm} />
+                </Router>
+            </React.Fragment>
+
         );
     }
 }
