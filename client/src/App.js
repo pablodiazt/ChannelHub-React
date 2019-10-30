@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect, Link } from "react-router-dom";
 import jwt from 'jsonwebtoken';
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/css/bootstrap.min.css';
 
 // ---- PAGES:
 import Home from "./components/pages/Home";
@@ -41,12 +41,12 @@ import './App.css';
 //     );
 // }
 
- function Logout() {
-     localStorage.removeItem("jsonwebtoken");
-     return (
-         <Redirect to='/' />
-     );
- }
+function Logout() {
+    localStorage.removeItem("jsonwebtoken");
+    return (
+        <Redirect to='/' />
+    );
+}
 
 function App() {
     return (
@@ -55,14 +55,14 @@ function App() {
             {/* <Switch> */}
 
             <Route path="/" component={Header} />
-//            <Route path="/" component={Navbar} />
+            <Route path="/" component={Navbar} />
 
             <Route exact path="/" component={Home} />
             {/* <Route exact path="/home" component={Home} /> */}
 
             <Route path="/signup" component={SignUp} />
             <Route path="/login" component={Login} />
-	    <Route exact path="/logout" component={Logout} />
+            <Route exact path="/logout" component={Logout} />
             {/* <Route exact path="/logout" component={Logout} /> */}
 
             <Route exact path="/404" component={NotFound} />
