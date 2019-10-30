@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect, Link } from "react-router-dom";
 import jwt from 'jsonwebtoken';
 
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 // ---- PAGES:
 import Home from "./components/pages/Home";

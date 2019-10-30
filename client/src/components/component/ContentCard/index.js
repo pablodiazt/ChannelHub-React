@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect, Link } from "react-router-dom";
 import axios from 'axios';
-// import Card from 'react-bootstrap/Card';
+import Card from 'react-bootstrap/Card';
 
 // ---- COMPONENTS:
 // files:
@@ -46,5 +46,6 @@ class ContentCard extends Component {
         }
     }
 }
+
 
 export default ContentCard;
