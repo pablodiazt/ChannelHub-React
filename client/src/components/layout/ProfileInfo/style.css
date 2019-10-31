@@ -1,0 +1,22 @@
+.userName {
+    margin: 0 8% 6% 0;
+    font-weight: bold;
+}
+
+.channels {
+    margin: 0 8% 4% 0;
+}
+
+.followers {
+    margin: 0 8% 4% 0;
+}
+
+.following {
+    margin: 0 8% 0 0;
+    float: right;
+}
+
+.subscribed {
+    margin: 0 0 0 0;
+    width: 10px;
+}

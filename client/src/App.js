@@ -56,7 +56,7 @@ function App() {
             {/* <Switch> */}
 
             <Route path="/" component={Header} />
-            <Route path="/" component={Navbar} />
+            <Route exact path="/" component={Navbar} />
 
             <Route exact path="/" component={Home} />
             {/* <Route exact path="/home" component={Home} /> */}

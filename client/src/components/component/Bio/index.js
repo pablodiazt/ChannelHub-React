@@ -12,7 +12,7 @@ class Bio extends Component {
         return (
             <React.Fragment>
 
-                <p>this is my bio... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                <p className="bio">this is my bio... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 
             </React.Fragment >
         );

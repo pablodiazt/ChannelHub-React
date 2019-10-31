@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 
 // ---- LAYOUTS:
 import UserIntro from "../layout/UserIntro";
+import Navbar from "../layout/Navbar";
 import ContentCardContainer from "../layout/ContentCardContainer";
 // ---- COMPONENTS:
 import UserPortrait from "../component/UserPortrait";
@@ -15,6 +16,7 @@ class UserProfile extends Component {
             <React.Fragment>
                 <Route exact path="/profile" component={UserPortrait} />
                 <Route exact path="/profile" component={UserIntro} />
+                <Route exact path="/profile" component={Navbar} />
                 <Route exact path="/profile" component={ContentCardContainer} />
             </React.Fragment>
         );
