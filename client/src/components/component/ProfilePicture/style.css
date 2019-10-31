@@ -1,6 +1,8 @@
 .profile-pic {
     border-radius: 50%;
     margin: 2% 0 0 5%;
+    display: inline-block;
+    float: left;
 }
 
 .profile-pic-text {

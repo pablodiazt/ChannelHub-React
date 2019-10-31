@@ -85,7 +85,7 @@ export default class ProfilePicture extends React.Component {
                             >
                                 <input {...getInputProps()} />
                                 {
-                                    <p class="font-weight-bold">Drop your profile picture here or click to select files.</p>
+                                    // <p class="font-weight-bold">Drop your profile picture here or click to select files.</p>
                                 }
                             </div>
                         )

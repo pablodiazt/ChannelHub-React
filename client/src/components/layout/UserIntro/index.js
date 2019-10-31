@@ -1,18 +1,15 @@
 // dependencies:
-// import React from 'react';
 import React, { Component } from "react";
-import Dropzone from 'react-dropzone';
-import request from 'superagent';
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 // ---- LAYOUTS:
-import ContentCard from "../ContentCardContainer"
+import ProfileInfo from "../ProfileInfo";
 // ---- COMPONENTS:
-import Portrait from "../../component/UserPortrait";
 import ProfilePicture from "../../component/ProfilePicture";
+import Bio from "../../component/Bio";
+import FollowedBy from "../../component/FollowedBy";
 // files:
 import "./style.css";
-
 
 
 class UserIntro extends Component {
@@ -23,6 +20,13 @@ class UserIntro extends Component {
 
                 <Router>
                     <Route path="/" component={ProfilePicture} />
+
+                    <div className="profile-middle">
+                        <Route path="/" component={ProfileInfo} />
+                        <Route path="/" component={Bio} />
+                        <Route path="/" component={FollowedBy} />
+                    </div>
+
                 </Router>
 
 
