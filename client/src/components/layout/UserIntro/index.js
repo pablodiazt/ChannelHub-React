@@ -9,43 +9,26 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import ContentCard from "../ContentCardContainer"
 // ---- COMPONENTS:
 import Portrait from "../../component/UserPortrait";
+import ProfilePicture from "../../component/ProfilePicture";
 // files:
 import "./style.css";
-import ProfilePic from "./profile-pic.png";
 
 
-export default class ContactForm extends React.Component {
 
+class UserIntro extends Component {
     render() {
         return (
-            <Dropzone
-                multiple={false}
-                accept="image/*"
-                onDrop={this.onImageDrop.bind(this)}>
-                <p>Drop an image or click to select a file to upload.</p>
-            </Dropzone>
-        )
+            <React.Fragment>
 
+
+                <Router>
+                    <Route path="/" component={ProfilePicture} />
+                </Router>
+
+
+            </React.Fragment >
+        );
     }
 }
 
-
-    // class UserIntro extends Component {
-    //     render() {
-    //         return (
-    //             <React.Fragment>
-
-
-    //                 <Router>
-    //                     <Route>
-
-    //                     </Route>
-    //                 </Router>
-
-
-    //             </React.Fragment >
-    //         );
-    //     }
-    // }
-
-    // export default UserIntro;
+export default UserIntro;
