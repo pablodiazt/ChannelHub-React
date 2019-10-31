@@ -9,6 +9,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./components/pages/Home";
 import SignUp from "./components/pages/SignUp";
 import Login from "./components/pages/Login";
+import UserProfile from "./components/pages/UserProfile";
 // import Logout from "./components/pages/Logout";
 import NotFound from "./components/pages/NotFound";
 // ---- LAYOUTS:
@@ -63,7 +64,7 @@ function App() {
             <Route path="/signup" component={SignUp} />
             <Route path="/login" component={Login} />
             <Route exact path="/logout" component={Logout} />
-            {/* <Route exact path="/logout" component={Logout} /> */}
+            <Route exact path="/profile" component={UserProfile} />
 
             <Route exact path="/404" component={NotFound} />
             {/* <Redirect to="/404" /> */}
