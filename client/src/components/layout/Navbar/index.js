@@ -1,7 +1,6 @@
 // dependencies:
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Link, matchPath } from "react-router-dom";
-import jwt from 'jsonwebtoken';
 
 // ---- files:
 import "./style.css";
@@ -9,20 +8,25 @@ import "./style.css";
 
 class NavBar extends Component {
     render() {
-        var token = localStorage.getItem("jsonwebtoken");
 
+        // match specific user profile and say hello to him
         const Profile = ({ match, loading }) => {
             if(loading) return <div>Loading...</div>;
             return <div>You're on the Profile {match.params.profileId}</div>;
         };
+
+        // select profile
         const SelectProfile = () => <div>Select a Profile</div>;
 
+        // match path name
         const getParams = pathname => {
             const matchProfile = matchPath(pathname, {
-                path: `/profile/:profileId`,
+                // path: `/profile/:profileId`,
+                path: '/profile',
             });
             return (matchProfile && matchProfile.params) || {};
         };
+
 
         class App extends Component {
             state = {
