@@ -49,12 +49,15 @@ class HeaderRight extends React.Component {
             var username = decodedToken.username;
             return (
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+
                     <ul class="ml-5 mr-0 my-2 my-lg-0">
                         <h6 style={{ color: 'white' }}>Welcome, {username}!</h6>
                     </ul>
+
                     <ul class="ml-0 my-2 my-lg-0">
                         <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/logout">Logout</Link>
                     </ul>
+
                 </div>
             );
         }
@@ -66,7 +69,6 @@ class HeaderRight extends React.Component {
                     {/* <button class="btn btn-secondary btn-sm my-2 my-sm-0" type="button" >Login</button> */}
                     <Link class="btn btn-secondary btn-sm my-2 my-sm-0" to="/login">Login</Link>
                 </ul>
-
 
                 {/* ---- SIGNUP */}
                 <ul class="ml-0 my-2 my-lg-0">

@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // ---- COMPONENTS / COMPONENT:
 // ---- files:
 import "./style.css";
+import Portrait from "./portrait.png";
 
 
 // window.addEventListener('load', function () {
@@ -25,8 +26,7 @@ class UserPortrait extends React.Component {
         return (
             <React.Fragment>
 
-                <h1>ljhlkhj</h1>
-                <img src="portrait.png" />
+                <img src={Portrait} width="100%" />
 
             </React.Fragment >
         );
