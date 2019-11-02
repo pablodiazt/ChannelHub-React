@@ -13,9 +13,9 @@ import UserProfile from "./components/pages/UserProfile";
 // import Logout from "./components/pages/Logout";
 import NotFound from "./components/pages/NotFound";
 // ---- LAYOUTS:
-import Header from "./components/layout/Header"
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
+import Header from "./components/layouts/Header"
+import Navbar from "./components/layouts/Navbar";
+import Footer from "./components/layouts/Footer";
 // files:
 import './App.css';
 

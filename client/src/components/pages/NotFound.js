@@ -2,8 +2,8 @@
 import React from "react";
 
 // ---- COMPONENTS:
-import { Col, Row, Container } from "../component/Grid";
-import Jumbotron from "../component/Jumbotron";
+import { Col, Row, Container } from "../components/Grid";
+import Jumbotron from "../components/Jumbotron";
 
 function NotFound() {
     return (

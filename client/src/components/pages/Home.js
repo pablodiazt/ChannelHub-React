@@ -5,13 +5,13 @@ import jwt from 'jsonwebtoken';
 
 // ---- PAGES:
 // ---- LAYOUTS:
-import VideoPlaylist from "../layout/VideoPlaylist";
+import VideoPlaylist from "../layouts/VideoPlaylist";
 // ---- COMPONENTS:
-import ContentCardContainer from "../layout/ContentCardContainer";
+import ContentCardContainer from "../layouts/ContentCardContainer";
 
 class Home extends Component {
-
     render() {
+
         var token = localStorage.getItem("jsonwebtoken");
         if(token !== null) {
             var decodedToken = jwt.decode(token);
@@ -33,13 +33,15 @@ class Home extends Component {
             //         <h3> Please login to continue.</h3>
             //     </div>
             // );
-
         }
         return (
+
             <React.Fragment>
+
                 <Router>
                     <Route exact path="/" component={ContentCardContainer} />
                 </Router>
+
             </React.Fragment>
         );
 
@@ -53,6 +55,5 @@ class Home extends Component {
 
     }
 }
-
 
 export default Home;

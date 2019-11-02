@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import axios from 'axios';
 
 // ---- LAYOUTS:
-import SignUpForm from "../layout/SignUpForm";
+import SignUpForm from "../layouts/SignUpForm";
 // ---- COMPONENTS:
 
 
@@ -81,7 +81,7 @@ class SignUp extends Component {
     render() {
         return (
             <React.Fragment>
-                    <SignUpForm />
+                <SignUpForm />
             </React.Fragment>
         );
     }

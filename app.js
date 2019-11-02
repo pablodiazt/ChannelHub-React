@@ -28,7 +28,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 mongoose
     .connect(
         db, {
-            useNewUrlParser: true,
+        useNewUrlParser: true,
         useUnifiedTopology: true
     }
     )
