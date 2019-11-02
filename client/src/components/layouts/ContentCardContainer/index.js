@@ -58,7 +58,7 @@ class ContentCardContainer extends Component {
                     }
                 ]
             },
-            isPlaylist: true
+            isPlaylist: true,
         }
 
         var token = localStorage.getItem("jsonwebtoken");
@@ -80,9 +80,7 @@ class ContentCardContainer extends Component {
         return (
             <React.Fragment>
 
-                <div>
-                    <PlaylistTitle />
-                </div>
+                <PlaylistTitle />
 
 
                 {/* -------------- CARD */}
@@ -102,6 +100,31 @@ class ContentCardContainer extends Component {
 
                 </footer>
                 {/* -------------- MULTIPLE IMAGES */}
+
+
+
+                <PlaylistTitle />
+
+
+                {/* -------------- CARD */}
+                <footer class="page-footer font-small mdb-color lighten-3 pt-0 videoRow">
+
+                    {/* <!-- Footer Elements --> */}
+                    <div class="container">
+
+                        {/* <!--Grid row--> */}
+                        <div class="row">
+                            {this.createCards()}
+                        </div>
+                        {/* <!--Grid row--> */}
+
+                    </div>
+                    {/* <!-- Footer Elements --> */}
+
+                </footer>
+                {/* -------------- MULTIPLE IMAGES */}
+
+
 
             </React.Fragment>
         );
