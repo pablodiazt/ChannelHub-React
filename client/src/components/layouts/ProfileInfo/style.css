@@ -1,22 +1,32 @@
+.allLinks {
+    font-size: 1.14em;
+}
+
 .userName {
-    margin: 0 8% 6% 0;
+    margin: 0 8% 0 0;
     font-weight: bold;
+    float: left;
 }
 
 .channels {
-    margin: 0 8% 4% 0;
+    margin: 0 8% 0 0;
+    float: left;
 }
 
 .followers {
-    margin: 0 8% 4% 0;
+    margin: 0 8% 0 0;
+    float: left;
 }
 
 .following {
     margin: 0 8% 0 0;
-    float: right;
+    float: left;
+}
+
+.followingDiv {
+    display: inline-block;
 }
 
 .subscribed {
-    margin: 0 0 0 0;
-    width: 10px;
+    display: inline-block;
 }

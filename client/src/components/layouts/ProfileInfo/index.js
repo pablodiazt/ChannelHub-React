@@ -13,15 +13,15 @@ class ProfileInfo extends Component {
         return (
             <React.Fragment>
 
+                <div className="allLinks">
+                    <Link className="userName">james.rm</Link>
 
-                <Link className="userName">james.rm</Link>
+                    <Link className="channels">3 Channels</Link>
+                    <Link className="followers">955k followers</Link>
 
-                <Link className="channels">3 Channels</Link>
-                <Link className="followers">955k followers</Link>
-
-                <Link className="following">following 77 people</Link>
-                <div><Link className="subscribed">subscribed to 66 channels</Link></div>
-
+                    <div className="followingDiv"><Link className="following">following 77 people</Link></div>
+                    <div><Link className="subscribed">subscribed to 66 channels</Link></div>
+                </div>
 
             </React.Fragment >
         );
