@@ -27,8 +27,10 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 // mongoDB connection setup
 mongoose
     .connect(
-	db, { useNewUrlParser: true,
-	      useUnifiedTopology: true }
+        db, {
+            useNewUrlParser: true,
+        useUnifiedTopology: true
+    }
     )
     .then(() => console.log("successfully connected to mongodb"))
     .catch(err => console.log(err));
@@ -38,10 +40,8 @@ mongoose
 app.use('/api/accounts', accountsRouter);
 app.use('/api/playlist', playlistRouter);
 app.use('/api/channel', channelRouter);
-app.use('*', indexRouter); 
+app.use('*', indexRouter);
 
 // redirect all requests that don't match above to react-router
-
-
 var port = 4000;
 module.exports = app.listen(port);
