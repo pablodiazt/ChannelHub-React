@@ -7,11 +7,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 // ---- PAGES:
 import Home from "./components/pages/Home";
-import SignUp from "./components/pages/SignUp";
-import Login from "./components/pages/Login";
-import UserProfile from "./components/pages/UserProfile";
+import SignUp from "./components/pages/other/SignUp";
+import Login from "./components/pages/other/Login";
+import UserProfile from "./components/pages/other/UserProfile";
 // import Logout from "./components/pages/Logout";
-import NotFound from "./components/pages/NotFound";
+import NotFound from "./components/pages/other/NotFound";
 // ---- LAYOUTS:
 import Header from "./components/layouts/Header"
 import Navbar from "./components/layouts/Navbar";

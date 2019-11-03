@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import jwt from 'jsonwebtoken';
 
 // ---- PAGES:
-import Login from "../../pages/Login";
-import SignUp from "../../pages/SignUp"
+import Login from "../../pages/other/Login";
+import SignUp from "../../pages/other/SignUp"
 // ---- LAYOUT:
 // ---- COMPONENTS / COMPONENT:
 import SearchBar from "../../components/SearchBar";

@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-d
 import axios from 'axios';
 
 // ---- LAYOUTS:
-import SignUpForm from "../layouts/SignUpForm";
+import SignUpForm from "../../layouts/SignUpForm";
 // ---- COMPONENTS:
 
 

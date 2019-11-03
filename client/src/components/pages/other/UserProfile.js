@@ -3,11 +3,11 @@ import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect } from "react-router-dom";
 
 // ---- LAYOUTS:
-import UserIntro from "../layouts/UserIntro";
-import Navbar from "../layouts/Navbar";
-import ContentCardContainer from "../layouts/ContentCardContainer";
+import UserIntro from "../../layouts/UserIntro";
+import Navbar from "../../layouts/Navbar";
+import ContentCardContainer from "../../layouts/ContentCardContainer";
 // ---- COMPONENTS:
-import UserPortrait from "../components/UserPortrait";
+import UserPortrait from "../../components/UserPortrait";
 
 
 class UserProfile extends Component {
