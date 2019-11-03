@@ -1,10 +1,14 @@
 .cardBox {
     margin: 0 1% 4% 0;
+    /* height: 100%; */
+    /* width: 210px; */
 }
 
 
 .videoRow {
     background: rgb(255, 255, 255);
+    /* height: 110px; */
+    width: 100%;
 }
 
 /* .img-fluid {

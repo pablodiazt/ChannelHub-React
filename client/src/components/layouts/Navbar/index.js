@@ -93,20 +93,20 @@ class NavBar extends Component {
 
                 <nav class="navbar-expand-sm navbarTop">
 
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    {/* <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
-                    </button>
+                    </button> */}
 
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <div>
                         <ul class="navbar-nav navLinks">
 
                             <li class="nav-item active">
-                                <a class="nav-link" href="#">Channels <span class="sr-only">(current)</span></a>
+                                <a class="nav-link" href="profile/channels">Channels <span class="sr-only">(current)</span></a>
                             </li>
 
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Playlists</a>
+                                <a class="nav-link" href="profile/playlist">Playlists</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Videos</a>

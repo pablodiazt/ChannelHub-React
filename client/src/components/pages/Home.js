@@ -5,7 +5,6 @@ import jwt from 'jsonwebtoken';
 
 // ---- PAGES:
 // ---- LAYOUTS:
-import VideoPlaylist from "../layouts/VideoPlaylist";
 // ---- COMPONENTS:
 import ContentCardContainer from "../layouts/ContentCardContainer";
 
@@ -39,6 +38,7 @@ class Home extends Component {
             <React.Fragment>
 
                 <Router>
+                    {/* ChannelPlaylist */}
                     <Route exact path="/" component={ContentCardContainer} />
                 </Router>
 
