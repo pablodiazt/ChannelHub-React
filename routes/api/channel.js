@@ -4,12 +4,12 @@ const Channel = require('../../models/Channel');
 const jwt = require('jsonwebtoken');
 var validation = require('../../modules/validation');
 const is = require('is_js');
-
+const ObjectID = require('mongoose').Types.ObjectID;
 // *=required
 // {
 //   title: string*
 //   description: string*
-//   tags: [string]
+//   collaborators: [string]
 // }
 // get owning user from incoming jwt token in header
 router.post('/create', function(req, res) {
@@ -28,8 +28,8 @@ router.post('/create', function(req, res) {
 	owningUser: body.user
     };
 
-    if (is.existy(body.tags)) {
-	newChannelData.tags = body.tags;
+    if (is.existy(body.collaborators)) {
+	newChannelData.collaborators = body.collaborators;
     }
     // does content array contain at least one element?
     // create db object & save
@@ -54,7 +54,18 @@ router.post('/delete', function(req, res) {
 });
 
 router.post('/fetch', function(req, res) {
-    res.status(501);
+    const body = req.body;
+    if (is.existy(body.user)) {
+	Channel.find({owningUser = user}, 'title description _id').then(channels => {
+	    if (channels === null) {
+		res.status(400).json({success: false, error: "no channels found for user supplied"});
+	    } else {
+		res.status(200).json({success: true, channels: channels});
+	    }
+	});
+    } else {
+	res.status(400).json({success: false, error: "no user supplied"});
+    }
 });
 
 router.post('/update', function(req, res) {
