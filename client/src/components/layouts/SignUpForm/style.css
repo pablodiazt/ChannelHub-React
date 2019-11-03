@@ -1,23 +1,8 @@
-@import url('https://fonts.googleapis.com/css?family=Audiowide|Orbitron:700&display=swap');
-
 .formBox {
     background: white;
     margin: 5% 35% 1% 35%;
     padding: 1% 2% 2.8% 2%;
     color: black;
-}
-
-.logo-PrtOneForm {
-    float: left;
-    font-family: 'Orbitron', sans-serif;
-    color: rgb(23, 46, 60);
-}
-
-.logo-PrtTwoForm {
-    float: right;
-    font-family: 'Audiowide', cursive;
-    font-weight: bolder;
-    color: rgb(92, 139, 168);
 }
 
 .formBtn {

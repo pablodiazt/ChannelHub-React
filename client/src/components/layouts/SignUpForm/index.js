@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Redirect, Link } from "react-ro
 import axios from 'axios';
 
 // ---- COMPONENTS:
+import Logo from "../../components/Logo";
 // files:
 import './style.css';
 
@@ -65,9 +66,7 @@ class Home extends Component {
                 < div class="formBox text-center" >
 
                     {/* Brand Logo */}
-                    < div class="navbar-brand" >
-                        <h2 class="logo-PrtOneForm">Channel</h2> <h2 class="logo-PrtTwoForm">Hub</h2>
-                    </div >
+                    <Logo />
 
                     {/* Description */}
                     < p class="font-weight-bold text-secondary d-block" > Sign up to start learning from your most relevant content.</p >

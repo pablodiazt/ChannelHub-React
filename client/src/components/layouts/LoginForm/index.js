@@ -2,7 +2,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-// ---- COMPONENTS / COMPONENT:
 // ---- files:
 import "./style.css";
 
@@ -17,8 +16,10 @@ class LoginForm extends React.Component {
                     <form onSubmit={this.handleSubmit}>
                         <input type="text" placeholder="Username" name="username" value={this.state.username} onChange={this.handleChange} />
                         <br />
+
                         <input type="password" placeholder="Password" name="password" value={this.state.password} onChange={this.handleChange} />
                         <br />
+
                         <input type="submit" value="Submit" />
                     </form>
                 </div>
@@ -27,6 +28,5 @@ class LoginForm extends React.Component {
         );
     }
 }
-
 
 export default LoginForm;

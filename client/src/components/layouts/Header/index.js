@@ -9,7 +9,7 @@ import SignUp from "../../pages/other/SignUp"
 // ---- LAYOUT:
 // ---- COMPONENTS / COMPONENT:
 import SearchBar from "../../components/SearchBar";
-import Logo from "../../components/Logo";
+import LogoWhite from "../../components/LogoWhite";
 // ---- files:
 import "./style.css";
 
@@ -33,7 +33,7 @@ class HeaderLeft extends React.Component {
     render() {
         return (
             <React.Fragment>
-                <Route path="/" component={Logo} />
+                <Route path="/" component={LogoWhite} />
                 <Route path="/" component={SearchBar} />
             </React.Fragment>
         );
