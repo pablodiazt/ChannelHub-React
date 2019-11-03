@@ -4,12 +4,13 @@ import { BrowserRouter as Router, Route, Redirect, Switch, Link } from "react-ro
 import jwt from 'jsonwebtoken';
 
 // ---- PAGES:
-import ChannelPlaylist from "./ChannelPlaylist";
 import SignUp from "./other/SignUp";
 import Login from "./other/Login";
+// import Logout from "./Logout";
+import ChannelPlaylist from "./ChannelPlaylist";
 import UserProfile from "./other/UserProfile";
-// import Logout from "./components/pages/Logout";
 // ---- LAYOUTS:
+import Navbar from "../layouts/Navbar";
 // ---- COMPONENTS:
 
 
@@ -35,33 +36,32 @@ import UserProfile from "./other/UserProfile";
 //     );
 // }
 
-function Logout() {
-    localStorage.removeItem("jsonwebtoken");
-    return (
-        <Redirect to='/' />
-    );
-}
-
+// function Logout() {
+//     localStorage.removeItem("jsonwebtoken");
+//     return (
+//         <Redirect to='/' />
+//     );
+// }
 
 class Home extends Component {
     render() {
         return (
             <React.Fragment>
-
-
-
                 <Router>
-                    <Route exact path="/" component={ChannelPlaylist} />
+
+
+                    <Route exact path="/" component={Navbar} />
 
                     <Route path="/signup" component={SignUp} />
                     <Route path="/login" component={Login} />
                     {/* <Route exact path="/logout" component={Logout} /> */}
 
-                    <Route exact path="/profile" component={UserProfile} />
+                    <Route exact path="/" component={ChannelPlaylist} />
+
+                    <Route path="/profile" component={UserProfile} />
+
+
                 </Router>
-
-
-
             </React.Fragment>
         );
     }
