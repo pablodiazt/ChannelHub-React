@@ -56,7 +56,7 @@ router.post('/delete', function(req, res) {
 router.post('/fetch', function(req, res) {
     const body = req.body;
     if (is.existy(body.user)) {
-	Channel.find({owningUser = user}, 'title description _id').then(channels => {
+	Channel.find({owningUser: body.user}, 'title description _id').then(channels => {
 	    if (channels === null) {
 		res.status(400).json({success: false, error: "no channels found for user supplied"});
 	    } else {
