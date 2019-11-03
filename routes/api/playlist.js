@@ -66,6 +66,14 @@ router.post('/delete', function(req, res) {
     // else return {success:false, error}
 });
 
+/** 
+ * @api {post} /api/playlist/fetch Request playlist/multiple playlist information
+ * @apiName GetPlaylist
+ *
+ * @apiParam {String} playlistID valid playlist identifier
+ * @apiParam {String} channelID valid channel identifier
+ * @apiSuccess {Boolean} success True
+ */
 router.post('/fetch', function(req, res) {
     const body = req.body;
 
