@@ -1,6 +1,7 @@
 const express = require('express');
 var router = express.Router();
 const Playlist = require('../../models/Playlist');
+const ObjectID = require('mongoose').Types.ObjectID;
 // const Channel = require('../../models/Channel');
 const jwt = require('jsonwebtoken');
 var validation = require('../../modules/validation');
@@ -59,13 +60,48 @@ router.post('/create', function(req, res) {
 });
 
 router.post('/delete', function(req, res) {
+    res.status(501);
     // playlistID valid?
     // if found delete object, return {success:true}
     // else return {success:false, error}
-    res.status(501);
 });
 
+/** 
+ * @api {post} /api/playlist/fetch Request playlist/multiple playlist information
+ * @apiName GetPlaylist
+ *
+ * @apiParam {String} playlistID valid playlist identifier
+ * @apiParam {String} channelID valid channel identifier
+ * @apiSuccess {Boolean} success True
+ */
 router.post('/fetch', function(req, res) {
+    const body = req.body;
+
+    if(is.existy(body.channelID)) {
+	Playlist.find({channel: body.channelID}, 'title description content channel _id').then(playlists => {
+	    if (playlist === null) {
+		res.status(400).json({success: false, error: "that channel does not exist"});
+	    } else {
+		res.status(200).json(playlists);
+	    }
+	});
+    } else if(is.existy(body.playlistID)) {
+	Playlist.findOne({_id: new ObjectID(body.playlistID)}).then(playlist => {
+	    if (playlist === null) {
+		res.status(400).json({success: false, error: "that playlist does not exist"});
+	    } else {
+		res.status(200).json({
+		    title: playlist.title,
+		    description: playlist.description,
+		    content: playlist.content,
+		    channel: playlist.channel,
+		    playlistID: playlist._id.toString()
+		});
+	    }
+	});
+    } else {
+	res.status(400).json({success: false, error: "invalid request, please include either a channel or playlist id string"});
+    }
     // playlistID or channelID?
     // if playlistID, return same content as /create return
     // if channelID, return array of playlists, same of each as /create return
