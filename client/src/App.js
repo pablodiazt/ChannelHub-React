@@ -2,20 +2,19 @@
 import React, { Component } from "react";
 import { BrowserRouter as Router, Route, Switch, Redirect, Link } from "react-router-dom";
 import jwt from 'jsonwebtoken';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 // ---- PAGES:
+import SignUp from "./components/pages/other/SignUp";
+import Login from "./components/pages/other/Login";
+// import Logout from "./Logout";
 import Home from "./components/pages/Home";
-import SignUp from "./components/pages/SignUp";
-import Login from "./components/pages/Login";
-import UserProfile from "./components/pages/UserProfile";
-// import Logout from "./components/pages/Logout";
-import NotFound from "./components/pages/NotFound";
+import UserProfile from "./components/pages/other/UserProfile";
+import NotFound from "./components/pages/other/NotFound";
 // ---- LAYOUTS:
-import Header from "./components/layout/Header"
-import Navbar from "./components/layout/Navbar";
-import Footer from "./components/layout/Footer";
+import Header from "./components/layouts/Header";
+import Navbar from "./components/layouts/Navbar";
+import Footer from "./components/layouts/Footer";
 // files:
 import './App.css';
 
@@ -42,40 +41,43 @@ import './App.css';
 //     );
 // }
 
-function Logout() {
-    localStorage.removeItem("jsonwebtoken");
-    return (
-        <Redirect to='/' />
-    );
-}
+// function Logout() {
+//     localStorage.removeItem("jsonwebtoken");
+//     return (
+//         <Redirect to='/' />
+//     );
+// }
+
 
 function App() {
     return (
 
         <Router>
-            {/* <Switch> */}
+
 
             <Route path="/" component={Header} />
-            <Route path="/" component={Navbar} />
+            <Route exact path="/" component={Navbar} />
 
-            <Route exact path="/" component={Home} />
-            {/* <Route exact path="/home" component={Home} /> */}
+            <Switch>
+                <Route exact path="/" component={Home} />
+                {/* <Route path="/home" component={Home} /> */}
 
-            <Route path="/signup" component={SignUp} />
-            <Route path="/login" component={Login} />
-            <Route exact path="/logout" component={Logout} />
-            <Route exact path="/profile" component={UserProfile} />
+                <Route exact path="/signup" component={SignUp} />
+                <Route exact path="/login" component={Login} />
+                {/* <Route exact path="/logout" component={Logout} /> */}
 
-            <Route exact path="/404" component={NotFound} />
-            {/* <Redirect to="/404" /> */}
+                <Route exact path="/profile" component={UserProfile} />
+
+                <Route component={NotFound} />
+                {/* <Redirect to="/404" /> */}
+            </Switch>
 
             <Route path="/" component={Footer} />
 
-            {/* </Switch> */}
+
         </Router>
 
     );
 }
-
 
 export default App;

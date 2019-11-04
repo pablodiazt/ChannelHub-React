@@ -1,0 +1,36 @@
+.navbar-light {
+    /* background-color: rgb(182, 36, 36); */
+    /* height: 54px;
+    line-height: 14px; */
+    /* letter-spacing: 0.1em; */
+}
+
+.navbarTop {
+    /* padding: 0 20% 0 20%; */
+    margin: 0 30% 0 30%;
+}
+
+.nav-link {
+    margin: 0% 30% 8% 20%;
+    line-height: 10px;
+}
+
+.navbar-expand-sm .navbar-nav .nav-link {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.navLinks {
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.navLinks a:hover {
+    color: rgb(68, 209, 209);
+}

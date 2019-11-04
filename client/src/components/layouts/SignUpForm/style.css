@@ -1,0 +1,26 @@
+.formBox {
+    background: white;
+    margin: 5% 35% 1% 35%;
+    padding: 1% 2% 2.8% 2%;
+    color: black;
+}
+
+.formBtn {
+    background: rgb(23, 47, 60);
+    border-color: rgb(73, 98, 112);
+    border-radius: 5px;
+    width: 100%;
+}
+
+.termsLink {}
+
+.signInBox {
+    background: white;
+    color: black;
+    margin: 0% 35% 20% 35%;
+    padding: 1.5% 2% 1% 2%;
+}
+
+.loginLink {
+    color: rgb(57, 150, 240);
+}

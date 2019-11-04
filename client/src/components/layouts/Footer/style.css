@@ -1,0 +1,13 @@
+.myFooter {
+    background-color: #86a3c3;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+p a {
+    color: #007bff;
+}

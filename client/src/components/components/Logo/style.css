@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Audiowide|Orbitron:700&display=swap');
+
+.logo-PrtOneForm {
+    float: left;
+    font-family: 'Orbitron', sans-serif;
+    color: rgb(23, 46, 60);
+}
+
+.logo-PrtTwoForm {
+    float: right;
+    font-family: 'Audiowide', cursive;
+    font-weight: bolder;
+    color: rgb(92, 139, 168);
+}
