@@ -70,6 +70,7 @@ class ContentCardContainer extends Component {
 
     createCards = () => {
         var cards = []
+        cards.push(<PlaylistTitle />);
         this.state.playlistData.content.forEach(function (contentElement) {
             cards.push(<ContentCard title={contentElement.title} backend={contentElement.backend} thumbnailUrl={contentElement.thumbnailUrl} url={contentElement.url} />);
         });
@@ -103,7 +104,7 @@ class ContentCardContainer extends Component {
 
 
 
-                <PlaylistTitle />
+                {/* <PlaylistTitle /> */}
 
 
                 {/* -------------- CARD */}
