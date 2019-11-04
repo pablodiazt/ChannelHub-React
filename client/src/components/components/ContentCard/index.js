@@ -30,12 +30,18 @@ class ContentCard extends Component {
             ) : (
               ""
             )}
-            <Link
-              style={{ color: "blue" }} //
-              to={this.props.url}
-            >
-              Open
-            </Link>
+            {this.props.destination === "content" ? (
+              <Card.Link style={{ color: "blue" }} href={this.props.url}>
+                Load Content
+              </Card.Link>
+            ) : (
+              <Link
+                style={{ color: "blue" }} //
+                to={{ pathname: this.props.url, state: this.props.destination }}
+              >
+                Open
+              </Link>
+            )}
           </Card.Body>
         </Card>
       </React.Fragment>

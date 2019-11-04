@@ -1,7 +1,6 @@
 const express = require('express');
 var router = express.Router();
 const Playlist = require('../../models/Playlist');
-const ObjectID = require('mongoose').Types.ObjectID;
 // const Channel = require('../../models/Channel');
 const jwt = require('jsonwebtoken');
 var validation = require('../../modules/validation');
@@ -77,16 +76,16 @@ router.post('/delete', function(req, res) {
 router.post('/fetch', function(req, res) {
     const body = req.body;
 
-    if(is.existy(body.channelID)) {
-	Playlist.find({channel: body.channelID}, 'title description content channel _id').then(playlists => {
-	    if (playlist === null) {
+    if(is.existy(body.channel)) {
+	Playlist.find({channel: body.channel}, 'title description content channel _id').then(playlists => {
+	    if (playlists === null) {
 		res.status(400).json({success: false, error: "that channel does not exist"});
 	    } else {
 		res.status(200).json(playlists);
 	    }
 	});
-    } else if(is.existy(body.playlistID)) {
-	Playlist.findOne({_id: new ObjectID(body.playlistID)}).then(playlist => {
+    } else if(is.existy(body.playlist)) {
+	Playlist.findById({_id: body.playlist}).then(playlist => {
 	    if (playlist === null) {
 		res.status(400).json({success: false, error: "that playlist does not exist"});
 	    } else {
@@ -105,8 +104,7 @@ router.post('/fetch', function(req, res) {
     // playlistID or channelID?
     // if playlistID, return same content as /create return
     // if channelID, return array of playlists, same of each as /create return
-    res.status(501);
-});
+ });
 
 router.post('/update', function(req, res) {
     res.status(501);

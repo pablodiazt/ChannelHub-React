@@ -7,7 +7,7 @@ import is from "is_js";
 import CardColumns from "react-bootstrap/Card";
 
 // ---- COMPONENTS / COMPONENT:
-import PlaylistTitle from "../../components/PlaylistTitle"
+import PlaylistTitle from "../../components/PlaylistTitle";
 import ContentCard from "../../components/ContentCard";
 // ---- files:
 import "./style.css";
@@ -16,7 +16,8 @@ class ContentCardContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: ""
+      username: "",
+      display: "user"
     };
 
     var token = localStorage.getItem("jsonwebtoken");
@@ -26,22 +27,35 @@ class ContentCardContainer extends Component {
     }
   }
 
+  componentWillReceiveProps(nextProps) {
+    this.setState({ display: nextProps.location.state });
+    this.fetchApiData(nextProps.location.state, nextProps.match.params);
+  }
+
   componentDidMount() {
+    this.fetchApiData(this.state.display);
+  }
+
+  fetchApiData(display, params) {
     //get data on all channels for a user, set it in the state.
-    const params = this.props.match.params;
+    //const params = this.props.match.params;
     const match = this.props.match;
     var self = this;
-    if (match.path.includes("channel")) {
+    console.log("fetchapidata");
+    console.log(params);
+    if (display === "channel") {
+      console.log("finally worked");
       axios
         .post("/api/playlist/fetch", { channel: params.channelId })
         .then(function(response) {
           if (response.data !== self.state.playlistData) {
             self.setState({ playlistData: response.data });
           }
-        });
-    } else if (match.path.includes("playlist")) {
+        })
+        .catch(err => console.log(err));
+    } else if (display === "playlist") {
       axios
-        .post("api/playlist/fetch", { playlist: params.playlistId })
+        .post("/api/playlist/fetch", { playlist: params.playlistId })
         .then(function(response) {
           self.setState({ selectedPlaylist: response.data });
         });
@@ -70,11 +84,12 @@ class ContentCardContainer extends Component {
   //if route '/', render based on channelData content, show all channels for current user.
 
   render() {
+    console.log(this.state);
     var userCards = this.createUserCards();
     var channelCards = this.createChannelCards();
     var playlistCards = this.createPlaylistCards();
     var match = this.props.match;
-    if (match.path.includes("channel")) {
+    if (this.state.display === "channel") {
       return (
         <React.Fragment>
           <div class="container">
@@ -82,7 +97,7 @@ class ContentCardContainer extends Component {
           </div>
         </React.Fragment>
       );
-    } else if (match.path.includes("playlist")) {
+    } else if (this.state.display === "playlist") {
       return (
         <React.Fragment>
           <div class="container">
@@ -138,6 +153,7 @@ class ContentCardContainer extends Component {
             title={contentElement.title}
             description={contentElement.description}
             url={`/channel/${contentElement._id}`}
+            destination={"channel"}
           />
         );
       });
@@ -156,6 +172,7 @@ class ContentCardContainer extends Component {
             title={contentElement.title}
             description={contentElement.description}
             url={`/playlist/${contentElement._id}`}
+            destination={"playlist"}
           />
         );
       });
@@ -174,6 +191,7 @@ class ContentCardContainer extends Component {
             title={contentElement.title}
             thumbnailUrl={contentElement.thumbnailUrl}
             url={contentElement.contentUrl}
+            destination={"content"}
           />
         );
       });
