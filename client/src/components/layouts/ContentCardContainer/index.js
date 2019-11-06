@@ -124,7 +124,7 @@ class ContentCardContainer extends Component {
 
                         {/* <!--CARD--> */}
                         <div class="row">
-                            <PlaylistTitle />
+                            {/* <PlaylistTitle /> */}
                             {this.createCards()}
                         </div>
                         {/* <!--CARD--> */}
