@@ -1,15 +1,31 @@
-h5 {
-    margin-left: 10%;
+.playlistBar {
+    margin: .8% 0 .4% 0;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-end;
+    padding: .5rem 1rem;
+}
+
+.title {
+    position: absolute;
+    left: 1%;
+    font-weight: bold;
+}
+
+.btnEditTitle {
+    position: absolute;
+    left: 150px;
+}
+
+.btnEditPlaylist {
+    margin: 0 0 0 1%;
 }
 
 .bg-light {
     background-color: #f1f1f1 !important;
     border-top: .08px solid rgb(194, 194, 194);
     border-bottom: .02px solid rgb(223, 223, 223);
-}
-
-.playlistTitle {}
-
-.btnUpload {
-    margin-left: 40rem;
 }

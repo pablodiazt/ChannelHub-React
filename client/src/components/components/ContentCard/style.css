@@ -1,18 +1,22 @@
+/* /* .cardBox+.cardBox { */
+/* height: 100%; */
+/* width: 210px; */
+/* } */
+
 .cardBox {
-    margin: 0 1% 4% 0;
-    /* height: 100%; */
-    /* width: 210px; */
+    margin: 0 .5% 3% 0;
+}
+
+.cardBox:first-of-type {
+    margin-left: 0;
+}
+
+.cardBox:last-of-type {
+    margin-right: 0;
 }
 
 
 .videoRow {
     background: rgb(255, 255, 255);
-    /* height: 110px; */
     width: 100%;
 }
-
-/* .img-fluid {
-    box-sizing: initial;
-    padding: 0;
-    border: 0;
-} */

@@ -55,6 +55,18 @@ class ContentCardContainer extends Component {
                         url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
                         backend: 'react-player',
                         thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
+                    },
+                    {
+                        title: "this other video",
+                        url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
+                    },
+                    {
+                        title: "this other video",
+                        url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
                     }
                 ]
             },
@@ -70,7 +82,7 @@ class ContentCardContainer extends Component {
 
     createCards = () => {
         var cards = []
-        cards.push(<PlaylistTitle />);
+        // cards.push(<PlaylistTitle />);
         this.state.playlistData.content.forEach(function (contentElement) {
             cards.push(<ContentCard title={contentElement.title} backend={contentElement.backend} thumbnailUrl={contentElement.thumbnailUrl} url={contentElement.url} />);
         });
@@ -81,49 +93,47 @@ class ContentCardContainer extends Component {
         return (
             <React.Fragment>
 
-                <PlaylistTitle />
 
 
-                {/* -------------- CARD */}
-                <footer class="page-footer font-small mdb-color lighten-3 pt-0 videoRow">
+                {/* -------------- PLAYLIST */}
+                <div class="playlistContainer">
 
-                    {/* <!-- Footer Elements --> */}
+                    {/* <!-- Elements --> */}
                     <div class="container">
 
-                        {/* <!--Grid row--> */}
+                        {/* <!--CARD--> */}
                         <div class="row">
+                            <PlaylistTitle />
                             {this.createCards()}
                         </div>
-                        {/* <!--Grid row--> */}
+                        {/* <!--CARD--> */}
 
                     </div>
-                    {/* <!-- Footer Elements --> */}
+                    {/* <!-- Elements --> */}
 
-                </footer>
-                {/* -------------- MULTIPLE IMAGES */}
-
-
-
-                {/* <PlaylistTitle /> */}
+                </div>
+                {/* -------------- PLAYLIST */}
 
 
-                {/* -------------- CARD */}
-                <footer class="page-footer font-small mdb-color lighten-3 pt-0 videoRow">
 
-                    {/* <!-- Footer Elements --> */}
+                {/* -------------- PLAYLIST */}
+                <div class="playlistContainer">
+
+                    {/* <!-- Elements --> */}
                     <div class="container">
 
-                        {/* <!--Grid row--> */}
+                        {/* <!--CARD--> */}
                         <div class="row">
+                            <PlaylistTitle />
                             {this.createCards()}
                         </div>
-                        {/* <!--Grid row--> */}
+                        {/* <!--CARD--> */}
 
                     </div>
-                    {/* <!-- Footer Elements --> */}
+                    {/* <!-- Elements --> */}
 
-                </footer>
-                {/* -------------- MULTIPLE IMAGES */}
+                </div>
+                {/* -------------- PLAYLIST */}
 
 
 

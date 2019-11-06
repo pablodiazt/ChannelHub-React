@@ -8,10 +8,11 @@ function PlaylistTitle() {
     return (
         <React.Fragment>
             {/* ----------- PLAYLIST NAME */}
-            <nav class="navbar navbar-light bg-light playlistTitle">
-                <h5>
-                    HTML Videos:  <button type="button" class="btn btn-secondary btn-sm">edit name</button> <button type="button" class="btn btn-secondary btn-sm btnUpload">upload video</button> <button type="button" class="btn btn-secondary btn-sm">edit playlist</button>
+            <nav class="navbar-light bg-light playlistBar">
+                <h5 className="title">
+                    HTML Videos:
                 </h5>
+                <button type="button" class="btn btn-secondary btn-sm btnEditTitle">edit name</button> <button type="button" class="btn btn-secondary btn-sm">upload video</button> <button type="button" class="btn btn-secondary btn-sm btnEditPlaylist">edit playlist</button>
             </nav>
         </React.Fragment>
     );

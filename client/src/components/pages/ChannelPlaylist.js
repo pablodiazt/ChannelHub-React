@@ -38,14 +38,12 @@ class ChannelPlaylist extends Component {
             // );
         }
         return (
-
             <React.Fragment>
-
                 <Router>
-                    {/* ChannelPlaylist */}
-                    <Route exact path="/" component={ContentCardContainer} />
-                </Router>
 
+                    <Route exact path="/" component={ContentCardContainer} />
+
+                </Router>
             </React.Fragment>
         );
 

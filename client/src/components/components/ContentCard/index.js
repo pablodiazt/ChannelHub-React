@@ -21,7 +21,7 @@ class ContentCard extends Component {
             return (
                 <React.Fragment>
 
-                    <Card style={{ width: '12rem' }}>
+                    <Card style={{ width: '13rem' }}>
                         <Card.Body>
                             <Card.Title> {this.props.title} </Card.Title>
                             <Card.Text> {this.props.description} </Card.Text>
@@ -36,7 +36,7 @@ class ContentCard extends Component {
                 <React.Fragment>
 
                     <div className="cardBox">
-                        <Card style={{ width: '12rem' }}>
+                        <Card style={{ width: '13rem' }}>
                             <Card.Img variant="top" src={this.props.thumbnailUrl} />
                             <Card.Body>
                                 <Card.Title> {this.props.title} </Card.Title>
