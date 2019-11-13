@@ -1,3 +1,8 @@
+# This Repository has moved.
+Due to architecture changes, this repository has moved to [mrowland-seu/channelhub-vue](https://github.com/mrowland-seu/channelhub-vue). This currently exists only as an archive. 
+
+
+
 # ChannelHub
 
 ## API Routes & Return Status Codes
