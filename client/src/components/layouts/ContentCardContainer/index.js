@@ -71,6 +71,63 @@ class ContentCardContainer extends Component {
                 ]
             },
             isPlaylist: true,
+            username: '',
+            channelData: {},
+            playlistData: {
+                title: "first playlist!",
+                description: "this is a playlist!",
+                content: [
+                    {
+                        title: "first video",
+                        url: "https://www.youtube.com/watch?v=nlxu5dDwhO0",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/nlxu5dDwhO0/hqdefault.jpg"
+                    },
+                    {
+                        title: "this other video",
+                        url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
+                    },
+                    {
+                        title: "this other video",
+                        url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
+                    },
+                    {
+                        title: "this other video",
+                        url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
+                    },
+                    {
+                        title: "this other video",
+                        url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
+                    },
+                    {
+                        title: "this other video",
+                        url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
+                    },
+                    {
+                        title: "this other video",
+                        url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
+                    },
+                    {
+                        title: "this other video",
+                        url: "https://www.youtube.com/watch?v=U7nJBFjKqAY",
+                        backend: 'react-player',
+                        thumbnailUrl: "https://i.ytimg.com/vi/U7nJBFjKqAY/hqdefault.jpg"
+                    }
+                ]
+            },
+            isPlaylist: true,
         }
 
         var token = localStorage.getItem("jsonwebtoken");
@@ -82,7 +139,7 @@ class ContentCardContainer extends Component {
 
     createCards = () => {
         var cards = []
-        // cards.push(<PlaylistTitle />);
+        this.state.playlistData
         this.state.playlistData.content.forEach(function (contentElement) {
             cards.push(<ContentCard title={contentElement.title} backend={contentElement.backend} thumbnailUrl={contentElement.thumbnailUrl} url={contentElement.url} />);
         });
@@ -117,22 +174,22 @@ class ContentCardContainer extends Component {
 
 
                 {/* -------------- PLAYLIST */}
-                <div class="playlistContainer">
+                {/* <div class="playlistContainer"> */}
 
-                    {/* <!-- Elements --> */}
-                    <div class="container">
+                {/* <!-- Elements --> */}
+                {/* <div class="container"> */}
 
-                        {/* <!--CARD--> */}
-                        <div class="row">
-                            {/* <PlaylistTitle /> */}
+                {/* <!--CARD--> */}
+                {/* <div class="row">
+                            <PlaylistTitle />
                             {this.createCards()}
-                        </div>
-                        {/* <!--CARD--> */}
+                        </div> */}
+                {/* <!--CARD--> */}
 
-                    </div>
-                    {/* <!-- Elements --> */}
+                {/* </div> */}
+                {/* <!-- Elements --> */}
 
-                </div>
+                {/* </div> */}
                 {/* -------------- PLAYLIST */}
 
 

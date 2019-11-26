@@ -1,12 +1,12 @@
 .playlistBar {
     margin: .8% 0 .4% 0;
+    padding: .5rem 1rem;
     width: 100%;
-    position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    position: relative;
     justify-content: flex-end;
-    padding: .5rem 1rem;
+    align-items: center;
 }
 
 .title {
